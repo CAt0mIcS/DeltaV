@@ -100,6 +100,9 @@ venv.bak/
 # gitignore for TeX
 
 *.pdf
+!docs/references/
+!docs/references/*.pdf
+
 
 ## Core latex/pdflatex auxiliary files:
 *.aux
