@@ -1,0 +1,40 @@
+\documentclass{report}
+\usepackage[a4paper, top=1cm, bottom=1cm, left=2cm, right=2cm, heightrounded]{geometry}
+
+\usepackage{amsmath}
+\usepackage[colorlinks=true, urlcolor=blue, linkcolor=black]{hyperref}
+
+\title{DeltaV Architectural Report}
+\author{Gabriel Sippl, Simon Geier}
+\date{}
+
+\setlength{\parskip}{0.5em}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\chapter{Introduction}
+This document outlines the design choices and requirements for each component and will be updated as the design decisions change. \\
+\textit{\textbf{DeltaV}} is a Delta robot designed to perform many different \textit{pick-and-place} operations, focusing on precision and modularity. \\
+It will be capable of four degrees of freedom, translation in the $x,y$, and $z$ directions as well as rotation around the vertical axis.
+The translation components will be handled by the arms' parallelogram structure, whereas the rotation will be handled by a separate module mounted to the end-effector. \\
+For now, we will define some broad goals the robot should be able to achieve. \textit{\textbf{DeltaV}} should be capable of
+\begin{enumerate}
+  \item picking up, rotating, and placing (paper) letters at predetermined positions,
+  \item automatically detecting objects in a certain field and moving them to a storage location, and as a final goal
+  \item applying solder paste with a syringe to predefined positions and reflow soldering SMD components.
+\end{enumerate}
+
+\subsection{Requirements}
+
+
+\chapter{Mechanical Design}
+\input{mechanical/mechanical.tex}
+
+\chapter{Electrical Design}
+\input{electrical/electrical.tex}
+
+\chapter{Software Design}
+
+\end{document}
