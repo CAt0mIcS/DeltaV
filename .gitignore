@@ -102,6 +102,7 @@ venv.bak/
 *.pdf
 !docs/references/
 !docs/references/*.pdf
+!docs/references/electrical/*.pdf
 
 
 ## Core latex/pdflatex auxiliary files:
