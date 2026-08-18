@@ -4228,145 +4228,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+5V"
-			(power global)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "+5V"
-				(at 0 3.556 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+5V\""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "+5V_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+5V_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:GND"
 			(power global)
 			(pin_numbers
@@ -4488,6 +4349,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "078b6f3d-760e-4188-bd1d-c9b2982337dc")
+	)
+	(junction
+		(at 69.85 120.65)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1412e8bd-340e-4d7c-a4f6-4d7ba3334255")
 	)
 	(junction
 		(at 82.55 39.37)
@@ -4674,6 +4541,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b4e2be4b-7404-4ba3-a70f-fac9b9ce3594")
+	)
+	(junction
+		(at 67.31 120.65)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b714e385-e464-47ba-b3cc-0f37be60ccb4")
 	)
 	(junction
 		(at 67.31 116.84)
@@ -4955,16 +4828,6 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 196.85) (xy 125.73 187.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "102eb609-0d63-4110-aed6-7c07d1ec80d0")
-	)
-	(wire
-		(pts
 			(xy 137.16 52.07) (xy 135.89 52.07)
 		)
 		(stroke
@@ -5145,7 +5008,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 130.81) (xy 77.47 105.41)
+			(xy 77.47 132.08) (xy 77.47 105.41)
 		)
 		(stroke
 			(width 0)
@@ -5185,7 +5048,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 130.81) (xy 80.01 106.68)
+			(xy 80.01 132.08) (xy 80.01 106.68)
 		)
 		(stroke
 			(width 0)
@@ -5495,7 +5358,7 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 128.27) (xy 67.31 130.81)
+			(xy 67.31 120.65) (xy 67.31 132.08)
 		)
 		(stroke
 			(width 0)
@@ -5625,16 +5488,6 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 128.27) (xy 69.85 130.81)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6b98e263-a1ae-47ba-a194-74b48e3ab0af")
-	)
-	(wire
-		(pts
 			(xy 80.01 106.68) (xy 204.47 106.68)
 		)
 		(stroke
@@ -5675,7 +5528,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 93.98) (xy 74.93 130.81)
+			(xy 74.93 93.98) (xy 74.93 132.08)
 		)
 		(stroke
 			(width 0)
@@ -5842,16 +5695,6 @@
 			(type default)
 		)
 		(uuid "889d45c8-ab0d-43f7-8823-bec19db8f627")
-	)
-	(wire
-		(pts
-			(xy 146.05 196.85) (xy 146.05 187.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "893423bc-2422-4675-b8a5-3080af4df98f")
 	)
 	(wire
 		(pts
@@ -6055,6 +5898,16 @@
 	)
 	(wire
 		(pts
+			(xy 69.85 120.65) (xy 69.85 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a974d49-690c-47c9-9f46-b7d7995e2701")
+	)
+	(wire
+		(pts
 			(xy 71.12 67.31) (xy 78.74 67.31)
 		)
 		(stroke
@@ -6085,7 +5938,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 130.81) (xy 85.09 109.22)
+			(xy 85.09 132.08) (xy 85.09 109.22)
 		)
 		(stroke
 			(width 0)
@@ -6325,7 +6178,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 130.81) (xy 72.39 92.71)
+			(xy 72.39 132.08) (xy 72.39 92.71)
 		)
 		(stroke
 			(width 0)
@@ -6335,7 +6188,7 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 130.81) (xy 82.55 107.95)
+			(xy 82.55 132.08) (xy 82.55 107.95)
 		)
 		(stroke
 			(width 0)
@@ -8952,162 +8805,6 @@
 			(project "Testing Circuit"
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5"
 					(reference "R7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 125.73 187.96 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3bf5f1f3-74d2-42e6-a320-6199001e1335")
-		(property "Reference" "#PWR021"
-			(at 125.73 184.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 125.73 193.04 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 125.73 187.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 125.73 187.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 125.73 187.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e90930a4-bccb-41ab-9db2-b58954665fa2")
-		)
-		(instances
-			(project "Testing Circuit"
-				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5"
-					(reference "#PWR021")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 146.05 187.96 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3c6ca9c1-faa8-4578-802b-2204ac989719")
-		(property "Reference" "#PWR022"
-			(at 146.05 194.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 146.05 193.04 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 146.05 187.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 146.05 187.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 146.05 187.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d4020b72-f410-48ad-8058-304b327bb0b6")
-		)
-		(instances
-			(project "Testing Circuit"
-				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5"
-					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -14676,7 +14373,7 @@
 	)
 	(symbol
 		(lib_id "arduino-library:Arduino_Mega2560_R3_Shield")
-		(at 91.44 163.83 90)
+		(at 91.44 165.1 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14686,7 +14383,7 @@
 		(dnp no)
 		(uuid "c81d3c63-0cd1-49c4-801e-e6b20d9d0555")
 		(property "Reference" "A1"
-			(at 115.57 161.798 90)
+			(at 115.57 163.068 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14697,7 +14394,7 @@
 			)
 		)
 		(property "Value" "Arduino_Mega2560_R3_Shield"
-			(at 115.57 164.338 90)
+			(at 115.57 165.608 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14708,7 +14405,7 @@
 			)
 		)
 		(property "Footprint" "PCM_arduino-library:Arduino_Mega2560_R3_Shield"
-			(at 165.1 163.83 0)
+			(at 165.1 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14719,7 +14416,7 @@
 			)
 		)
 		(property "Datasheet" "https://docs.arduino.cc/hardware/mega-2560"
-			(at 161.29 163.83 0)
+			(at 161.29 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14730,7 +14427,7 @@
 			)
 		)
 		(property "Description" "Shield for Arduino Mega 2560 R3"
-			(at 91.44 163.83 0)
+			(at 91.44 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
