@@ -40,6 +40,8 @@ void disableBackwardB();
 
 void stepButtonPressed();
 
+void chargeForwardA();
+
 void setup()
 {
     pinMode(PIN_MOS_LEFTA_HIGH, OUTPUT);
@@ -47,63 +49,22 @@ void setup()
     pinMode(PIN_MOS_RIGHTA_HIGH, OUTPUT);
     pinMode(PIN_MOS_RIGHTA_LOW, OUTPUT);
 
-    pinMode(PIN_MOS_LEFTB_HIGH, OUTPUT);
-    pinMode(PIN_MOS_LEFTB_LOW, OUTPUT);
-    pinMode(PIN_MOS_RIGHTB_HIGH, OUTPUT);
-    pinMode(PIN_MOS_RIGHTB_LOW, OUTPUT);
-
-    pinMode(PIN_STEP_BUTTON, INPUT_PULLUP);
-    attachInterrupt(digitalPinToInterrupt(PIN_STEP_BUTTON), stepButtonPressed, FALLING);
-
     Serial.begin(9600);
+
+    delay(100);
+
+    chargeForwardA();
+    delay(15);
+    digitalWrite(PIN_MOS_RIGHTA_LOW, LOW);
+    delay(1);
+
+    digitalWrite(PIN_MOS_LEFTA_HIGH, HIGH);
 }
+
+static int counter = 0;
 
 void loop()
 {
-    float voltagemVA = analogRead(PIN_CURRENT_SENSORA) * 5000.f / 1023.f;
-    float currentmAA = (voltagemVA - 2500.f) / 185.f;
-
-    printCurrentmA("Current current A: ", currentmAA);
-
-    float voltagemVB = analogRead(PIN_CURRENT_SENSORB) * 5000.f / 1023.f;
-    float currentmAB = (voltagemVB - 2500.f) / 185.f;
-
-    printCurrentmA("Current current B: ", currentmAB);
-
-    float coilATarget = s_SineValues[s_StepCount] / 127.f * I_MAX;
-    float coilBTarget = s_CosineValues[s_StepCount] / 127.f * I_MAX;
-    printCurrentmA("Target current A: ", coilATarget);
-    printCurrentmA("Target current B: ", coilBTarget);
-
-    if (coilATarget >= 0.f)
-    {
-        if (currentmAA < coilATarget - 50)
-            enableForwardA();
-        else if (currentmAA > coilATarget + 50)
-            disableForwardA();
-    }
-    else
-    {
-        if (currentmAA > coilATarget + 50)
-            enableBackwardA();
-        else if (currentmAA < coilATarget - 50)
-            disableBackwardA();
-    }
-
-    if (coilBTarget >= 0.f)
-    {
-        if (currentmAB < coilBTarget - 50)
-            enableForwardB();
-        if (currentmAB > coilBTarget + 50)
-            disableForwardB();
-    }
-    else
-    {
-        if (currentmAB > coilBTarget + 50)
-            enableBackwardB();
-        else if (currentmAB < coilBTarget - 50)
-            disableBackwardB();
-    }
 }
 
 void incrementStep(int *count)
@@ -192,6 +153,18 @@ void stepButtonPressed()
     incrementStep(&s_StepCount);
     Serial.print("New step target: ");
     Serial.println(s_StepCount);
+}
+
+void chargeForwardA()
+{
+    digitalWrite(PIN_MOS_LEFTA_HIGH, LOW);
+    digitalWrite(PIN_MOS_LEFTA_LOW, LOW);
+    digitalWrite(PIN_MOS_RIGHTA_HIGH, LOW);
+    digitalWrite(PIN_MOS_RIGHTA_LOW, LOW);
+
+    delayMicroseconds(10);
+
+    digitalWrite(PIN_MOS_RIGHTA_LOW, HIGH);
 }
 
 void printCurrentmA(const char *text, float current)
