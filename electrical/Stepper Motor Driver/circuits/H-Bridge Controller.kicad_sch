@@ -1,0 +1,272 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "3054cd61-6702-4c94-abdf-94f9aded85d1")
+	(paper "A4")
+	(lib_symbols)
+	(wire
+		(pts
+			(xy 90.17 27.94) (xy 82.55 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47b15d04-3bb5-44bc-8bc2-b971be0ba5b8")
+	)
+	(wire
+		(pts
+			(xy 82.55 27.94) (xy 82.55 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a41ade02-eadc-46fe-a9b7-de1a53a729bf")
+	)
+	(wire
+		(pts
+			(xy 62.23 27.94) (xy 71.12 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4250890-adc8-433f-9c6f-cada868abb0f")
+	)
+	(wire
+		(pts
+			(xy 71.12 27.94) (xy 71.12 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c0d0bdc3-634e-44ab-83eb-cd9a6b8d10bf")
+	)
+	(hierarchical_label "BRB"
+		(shape input)
+		(at 82.55 45.72 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "15be776d-afcf-497e-b79e-e96e07f8e3bd")
+	)
+	(hierarchical_label "HIB"
+		(shape input)
+		(at 129.54 26.67 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2a433f1d-869c-4e56-927e-8590a069bde6")
+	)
+	(hierarchical_label "LIB"
+		(shape input)
+		(at 129.54 29.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3db24a86-ddfe-40a0-aa77-2da7158c9812")
+	)
+	(hierarchical_label "BRA"
+		(shape input)
+		(at 71.12 45.72 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5540cd17-6f22-4fda-8442-406ea4a6f361")
+	)
+	(hierarchical_label "HIA"
+		(shape input)
+		(at 22.86 26.67 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "82ca35f2-a092-4793-aff4-fb51c036d7f7")
+	)
+	(hierarchical_label "LIA"
+		(shape input)
+		(at 22.86 29.21 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d277d157-17ab-4296-b14b-4223c173620a")
+	)
+	(sheet
+		(at 90.17 24.13)
+		(size 39.37 7.62)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3")
+		(property "Sheetname" "Right Half-Bridge Controller"
+			(at 90.17 23.4184 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Half-Bridge Controller.kicad_sch"
+			(at 90.17 32.3346 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "HI" input
+			(at 129.54 26.67 0)
+			(uuid "5c25bccf-98d8-4dc0-8ea5-e1dfc2c1d92c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LI" input
+			(at 129.54 29.21 0)
+			(uuid "38abd412-509a-419e-a7f1-9a2afe22c03f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "OUT" input
+			(at 90.17 27.94 180)
+			(uuid "cc44a58e-5cec-4fb3-99f4-529507177439")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "Stepper Motor Driver"
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405"
+					(page "4")
+				)
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 22.86 24.13)
+		(size 39.37 7.62)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "dd02b200-5ad3-40be-b13e-7d42becbd6d6")
+		(property "Sheetname" "Left Half-Bridge Controller"
+			(at 22.86 23.4184 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Half-Bridge Controller.kicad_sch"
+			(at 22.86 32.3346 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "HI" input
+			(at 22.86 26.67 180)
+			(uuid "c8e7e401-ddd0-4026-9c54-1afa4c897b56")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "LI" input
+			(at 22.86 29.21 180)
+			(uuid "88d554f1-a4fb-4dfc-b689-c2a3a42a9c3d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "OUT" input
+			(at 62.23 27.94 0)
+			(uuid "15695022-3863-4041-addc-9d08e75ffdbf")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "Stepper Motor Driver"
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405"
+					(page "3")
+				)
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375"
+					(page "6")
+				)
+			)
+		)
+	)
+)
