@@ -437,7 +437,7 @@
         "uuid": "c25060f1-f2f3-4cbd-b6ee-5f66e19502f5"
       }
     ],
-    "used_designators": "Q1-14,M2,U1-8,R1-56,#PWR2,#PWR4-8,#PWR10,#PWR13-14,#PWR21-22,#PWR27-42,D1-24,C1-2,C5,C8-14",
+    "used_designators": "Q1-14,M2,U1-8,R1-56,#PWR2,#PWR4-19,#PWR21-22,#PWR27-42,D1-24,C1-2,C5,C8-22",
     "variants": []
   },
   "sheets": [
