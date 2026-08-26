@@ -16,6 +16,8 @@ static int s_CosineValues[] = {127, 126, 126, 125, 124, 123, 121, 119, 117, 114,
 
 #define PIN_STEP_BUTTON 30
 
+#define PWM_FREQ 25000
+
 static int s_StepCount = 0;
 static int s_StepTarget = 0;
 
@@ -66,9 +68,19 @@ void setup()
     // ICR1   = 319;
 
     // TIMER 3
-    TCCR3A = _BV(COM3A1) | _BV(COM3B1) | _BV(COM3C1) | _BV(WGM31);
-    TCCR3B = _BV(WGM33) | _BV(WGM32) | _BV(CS30);
-    ICR3 = 319;
+    TCCR3A = 0;
+    TCCR3B = 0;
+    TCNT3 = 0;
+
+    TCCR3A |= (1 << COM3A1) | (1 << COM3B1) | (1 << COM3C1);
+    TCCR3A |= (1 << WGM31);
+    TCCR3B |= (1 << WGM33) | (1 << WGM32);
+
+    // Set top value for 25 kHz frequency
+    ICR3 = 16000000L / PWM_FREQ - 1;
+
+    // Set prescaler to 1 (CS30 = 1)
+    TCCR3B |= (1 << CS30);
 
     // TIMER 4
     // TCCR4A = _BV(COM4A1) | _BV(COM4B1) | _BV(COM4C1) | _BV(WGM41);
@@ -89,8 +101,8 @@ void setup()
 
     digitalWrite(PIN_MOS_RIGHTA_LOW, HIGH); // Slow decay for forward direction
 
-    setDutyCycle(PIN_MOS_RIGHTA_HIGH, 0);
-    setDutyCycle(PIN_MOS_LEFTA_HIGH, 10);
+    setDutyCycle(PIN_MOS_RIGHTA_HIGH, 0.f);
+    setDutyCycle(PIN_MOS_LEFTA_HIGH, 0.35f);
 }
 
 static int counter = 0;
@@ -189,7 +201,15 @@ void stepButtonPressed()
 
 void setDutyCycle(int pin, float percentage)
 {
-    int dutyVal = (int)(percentage * 319.f);
+    if (percentage == 0.f)
+    {
+        pinMode(pin, INPUT);
+        return;
+    }
+
+    pinMode(pin, OUTPUT);
+
+    int dutyVal = (int)(percentage * (16000000L / PWM_FREQ - 1));
 
     if (pin == PIN_MOS_LEFTA_HIGH)
         OCR3B = dutyVal;
