@@ -10,7 +10,7 @@ module input_step_tb;
     initial begin
         step = 0;
 
-        $dumpfile("input_step_tb.vcd");
+        $dumpfile("waveform.vcd");
         $dumpvars(0, input_step_tb);
         #5000
          $finish;
