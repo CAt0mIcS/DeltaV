@@ -5,14 +5,14 @@ module input_step_tb;
 
     reg step;
     wire [7:0] target_step;
-    input_step dut(.step(step), .target_step(target_step));
+    input_step dut(.i_step(step), .o_target_step(target_step));
 
     initial begin
         step = 0;
 
         $dumpfile("waveform.vcd");
         $dumpvars(0, input_step_tb);
-        #5000
+        #500000
          $finish;
     end
 
