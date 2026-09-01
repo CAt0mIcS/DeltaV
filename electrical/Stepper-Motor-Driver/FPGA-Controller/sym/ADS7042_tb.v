@@ -31,7 +31,6 @@ module ADS7042_tb;
 
         $dumpfile("waveform.vcd");
         $dumpvars(0, ADS7042_tb);
-        $dumpvars(0, dut);
 
         #50000
          $finish;
