@@ -11,8 +11,8 @@ static int s_CosineValues[] = {127, 126, 126, 125, 124, 123, 121, 119, 117, 114,
 #define PIN_MOS_RIGHTA_HIGH 3
 #define PIN_MOS_RIGHTA_LOW 23
 
-#define PIN_CURRENT_SENSORA A3
-#define PIN_CURRENT_SENSORB A4
+#define PIN_CURRENT_SENSORA A7
+#define PIN_CURRENT_SENSORB A6
 
 #define PIN_STEP_BUTTON 30
 
@@ -39,6 +39,8 @@ void stepButtonPressed();
 
 void setDutyCycle(int pin, float percentage);
 void chargeForwardA();
+
+static float calibrationVoltageSensorA = 2500.f;
 
 void setup()
 {
@@ -99,16 +101,23 @@ void setup()
 
     delay(100);
 
+    calibrationVoltageSensorA = analogRead(PIN_CURRENT_SENSORA) * 5000.f / 1023.f;
+
     digitalWrite(PIN_MOS_RIGHTA_LOW, HIGH); // Slow decay for forward direction
 
     setDutyCycle(PIN_MOS_RIGHTA_HIGH, 0.f);
-    setDutyCycle(PIN_MOS_LEFTA_HIGH, 0.35f);
+    setDutyCycle(PIN_MOS_LEFTA_HIGH, 0.8f);
 }
 
 static int counter = 0;
 
 void loop()
 {
+    float voltagemVA = analogRead(PIN_CURRENT_SENSORA) * 5000.f / 1023.f;
+    float currentmAA = (voltagemVA - calibrationVoltageSensorA) / 185.f * 1000.f;
+
+    printCurrentmA("Current current A: ", currentmAA);
+    delay(300);
 }
 
 void incrementStep(int *count)
@@ -123,9 +132,6 @@ void enableForwardA()
     digitalWrite(PIN_MOS_LEFTA_LOW, LOW);
     digitalWrite(PIN_MOS_RIGHTA_HIGH, LOW);
 
-    // Deadtime
-    delayMicroseconds(1);
-
     digitalWrite(PIN_MOS_LEFTA_HIGH, HIGH);
     digitalWrite(PIN_MOS_RIGHTA_LOW, HIGH);
 }
@@ -134,9 +140,6 @@ void enableBackwardA()
 {
     digitalWrite(PIN_MOS_LEFTA_HIGH, LOW);
     digitalWrite(PIN_MOS_RIGHTA_LOW, LOW);
-
-    // Deadtime
-    delayMicroseconds(1);
 
     digitalWrite(PIN_MOS_LEFTA_LOW, HIGH);
     digitalWrite(PIN_MOS_RIGHTA_HIGH, HIGH);
@@ -147,9 +150,6 @@ void enableBackwardA()
 //     digitalWrite(PIN_MOS_LEFTB_LOW, LOW);
 //     digitalWrite(PIN_MOS_RIGHTB_HIGH, LOW);
 
-//     // Deadtime
-//     delayMicroseconds(1);
-
 //     digitalWrite(PIN_MOS_LEFTB_HIGH, HIGH);
 //     digitalWrite(PIN_MOS_RIGHTB_LOW, HIGH);
 // }
@@ -158,9 +158,6 @@ void enableBackwardA()
 // {
 //     digitalWrite(PIN_MOS_LEFTB_HIGH, LOW);
 //     digitalWrite(PIN_MOS_RIGHTB_LOW, LOW);
-
-//     // Deadtime
-//     delayMicroseconds(1);
 
 //     digitalWrite(PIN_MOS_LEFTB_LOW, HIGH);
 //     digitalWrite(PIN_MOS_RIGHTB_HIGH, HIGH);
