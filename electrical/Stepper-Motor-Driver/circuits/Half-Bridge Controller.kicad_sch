@@ -2178,16 +2178,6 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 36.83) (xy 132.08 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b97119c9-f1f5-4a77-a911-4d005983f83b")
-	)
-	(wire
-		(pts
 			(xy 100.33 54.61) (xy 119.38 54.61)
 		)
 		(stroke
@@ -2247,7 +2237,7 @@
 		(uuid "fedb95b0-ffb1-41c1-8a87-2944f9c2e935")
 	)
 	(hierarchical_label "OUT"
-		(shape input)
+		(shape bidirectional)
 		(at 135.89 54.61 0)
 		(effects
 			(font
@@ -4624,7 +4614,7 @@
 	)
 	(symbol
 		(lib_id "power:+24V")
-		(at 132.08 35.56 0)
+		(at 132.08 36.83 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4635,7 +4625,7 @@
 		(fields_autoplaced yes)
 		(uuid "c800cfe8-d317-4983-bb47-ccd984fe4b73")
 		(property "Reference" "#PWR02"
-			(at 132.08 39.37 0)
+			(at 132.08 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4646,7 +4636,7 @@
 			)
 		)
 		(property "Value" "+24V"
-			(at 132.08 30.48 0)
+			(at 132.08 31.75 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4656,7 +4646,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 132.08 35.56 0)
+			(at 132.08 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4667,7 +4657,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 132.08 35.56 0)
+			(at 132.08 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4678,7 +4668,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+24V\""
-			(at 132.08 35.56 0)
+			(at 132.08 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

@@ -437,7 +437,7 @@
         "uuid": "c25060f1-f2f3-4cbd-b6ee-5f66e19502f5"
       }
     ],
-    "used_designators": "Q1-14,M2,U1-8,R1-56,#PWR2,#PWR4-19,#PWR21-22,#PWR27-42,D1-24,C1-2,C5,C8-22",
+    "used_designators": "Q1-14,M2,U1-10,J1-2,R1-56,#PWR1-65,D1-24,C1-25,RLVK25R010DE1-2",
     "variants": []
   },
   "sheets": [
@@ -447,7 +447,7 @@
     ],
     [
       "e3c4045c-a645-4800-ba9b-f8f886693405",
-      "H-Bridge Controller 1"
+      "H-Bridge Controller A"
     ],
     [
       "dd02b200-5ad3-40be-b13e-7d42becbd6d6",
@@ -459,7 +459,7 @@
     ],
     [
       "63255003-cc9f-4484-b629-2cece1d23375",
-      "H-Bridge Controller 2"
+      "H-Bridge Controller B"
     ],
     [
       "dd02b200-5ad3-40be-b13e-7d42becbd6d6",
@@ -468,6 +468,14 @@
     [
       "9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3",
       "Right Half-Bridge Controller"
+    ],
+    [
+      "06fa326d-3253-4b51-93b8-81e3e564f7d6",
+      "Current Sensor A"
+    ],
+    [
+      "dc8574df-72f0-4dd6-9c05-ed1f6574d07d",
+      "Current Sensor B"
     ]
   ],
   "text_variables": {},

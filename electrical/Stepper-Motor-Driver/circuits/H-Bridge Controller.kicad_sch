@@ -45,8 +45,8 @@
 		)
 		(uuid "c0d0bdc3-634e-44ab-83eb-cd9a6b8d10bf")
 	)
-	(hierarchical_label "BRB"
-		(shape input)
+	(hierarchical_label "BR2"
+		(shape bidirectional)
 		(at 82.55 45.72 270)
 		(effects
 			(font
@@ -56,7 +56,7 @@
 		)
 		(uuid "15be776d-afcf-497e-b79e-e96e07f8e3bd")
 	)
-	(hierarchical_label "HIB"
+	(hierarchical_label "HI2"
 		(shape input)
 		(at 129.54 26.67 0)
 		(effects
@@ -67,7 +67,7 @@
 		)
 		(uuid "2a433f1d-869c-4e56-927e-8590a069bde6")
 	)
-	(hierarchical_label "LIB"
+	(hierarchical_label "LI2"
 		(shape input)
 		(at 129.54 29.21 0)
 		(effects
@@ -78,8 +78,8 @@
 		)
 		(uuid "3db24a86-ddfe-40a0-aa77-2da7158c9812")
 	)
-	(hierarchical_label "BRA"
-		(shape input)
+	(hierarchical_label "BR1"
+		(shape bidirectional)
 		(at 71.12 45.72 270)
 		(effects
 			(font
@@ -89,7 +89,7 @@
 		)
 		(uuid "5540cd17-6f22-4fda-8442-406ea4a6f361")
 	)
-	(hierarchical_label "HIA"
+	(hierarchical_label "HI1"
 		(shape input)
 		(at 22.86 26.67 180)
 		(effects
@@ -100,7 +100,7 @@
 		)
 		(uuid "82ca35f2-a092-4793-aff4-fb51c036d7f7")
 	)
-	(hierarchical_label "LIA"
+	(hierarchical_label "LI1"
 		(shape input)
 		(at 22.86 29.21 180)
 		(effects
@@ -169,7 +169,7 @@
 				(justify right)
 			)
 		)
-		(pin "OUT" input
+		(pin "OUT" bidirectional
 			(at 90.17 27.94 180)
 			(uuid "cc44a58e-5cec-4fb3-99f4-529507177439")
 			(effects
@@ -248,7 +248,7 @@
 				(justify left)
 			)
 		)
-		(pin "OUT" input
+		(pin "OUT" bidirectional
 			(at 62.23 27.94 0)
 			(uuid "15695022-3863-4041-addc-9d08e75ffdbf")
 			(effects
