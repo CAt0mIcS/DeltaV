@@ -1,0 +1,29 @@
+For educational purposes, it was decided to build one of the three required stepper motor drivers from scratch. 
+However, due to the high cost of individual components, the other two drivers would be purchased ready-made.
+
+\subsection{Component Selection}
+\subsubsection{IRF530NPbF - nMOSFET}
+Two H-Bridges with four nMOSFETs each will supply the motor with current. 
+The IRF530NPbF HEXFET$^\circledR$ power MOSFET was chosen as it strikes a good balance between cost and functionality. 
+It features a drain-to-source breakdown voltage of $100V$. 
+This allows a margain of $76V$ for potential voltage spikes induced by the inductive load. 
+The continuous drain current of $17A$ and sufficiently low $R_{\text{DS(on)}}=90m\Omega$ ensure that any current spikes will not damage the MOSFETs and heat management stays manageable.
+Furthermore, the built-in reverse recovery diode can handle up to $60A$ of pulsed drain current with a diode forward voltage of $1.3V$. 
+The gate charge $Q_\text{G}=37nC$ is also low enough to allow fast switching without too many switching losses or delays. 
+
+\subsubsection{UCC27710D - MOSFET Gate Driver}
+Instead of using pMOS-Technology for the high-side gate drivers, nMOSFETs will be used due to their lower $R_{\text{DS(on)}}$ and thus better heat management for high-power applications. 
+This, however, has the drawback that the gate-to-source voltage $V_{GS}$ needs to be significantly higher than the drain-to-source voltage $V_{DS}$ in order for the nMOSFET to conduct. 
+Since $V_{DS}$ will sit at around $0V$, driving the MOSFETs with a $5V$ PWM logic signal directly will result in $V_{GS}\approx 2V$ which doesn't reach the threshold voltage of around $3V$. 
+Thus, a dedicated high-side gate driver is required to boost the PWM signal to around $36V$ resulting in $V_{GS}=12V$ which is sufficient to drive the MOSFETs. 
+The UCC27710D high-side low-side gate driver was chosen as it is specifically designed for motor drivers and features protection circuitry and automatic deadtime against shorts caused by both high and low-side MOSFETs being on at the same time. 
+Furthermore, it is capable of supporting a bootstrap capacitor at the high-side gate to boost the voltage to the required $36V$ above GND. 
+
+\subsubsection{1N5819 - Bootstrap Diode}
+To charge the bootstrap capacitor from the UCC27710Ds supply voltage of $12V$ a diode with fast switching capabilities and low forward voltage is needed. 
+The 1N5819 Shottky diode has a forward voltage of just $0.9V$, repetitive peak reverse voltage of $40V$ and a repetitive peak forward current of $10A$. 
+Thus, it is more than sufficient to charge the bootstrap capacitor at high switching frequencies.
+
+\subsubsection{BAT43 - Gate Diode}
+The UCC27710D's datasheet recommends adding a diode from the MOSFET's gate terminal back to the HO/LO pins to allow the gate capacitance to discharge when the MOSFET is switched off. 
+The BAT43 Shottky diode supports fast switching and low forward voltage with enough continuous forward current to safely discharge the MOSFET.
