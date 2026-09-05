@@ -15,3 +15,12 @@
 `define MICROSTEPPING_INCREMENT_1_64 9'd4
 `define MICROSTEPPING_INCREMENT_1_128 9'd2
 `define MICROSTEPPING_INCREMENT_1_256 9'd1
+
+
+`define H_BRIDGE_OFF 2'd0
+// Defined as going from the left high-side driver to the right low-side driver (left to right)
+`define H_BRIDGE_DRIVE_POS 2'd1
+// Defined as going from the right high-side driver to the left low-side driver (right to left)
+`define H_BRIDGE_DRIVE_NEG 2'd2
+`define H_BRIDGE_SLOW_DECAY 0
+`define H_BRIDGE_FAST_DECAY 1

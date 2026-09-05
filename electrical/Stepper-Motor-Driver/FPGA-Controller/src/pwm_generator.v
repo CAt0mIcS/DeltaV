@@ -11,7 +11,7 @@ module pwm_generator(
         o_pwm = 0;
 
     // This setup gives approx. 267kHz pwm frequency with a 27MHz clk
-    always @(posedge clk) begin
+    always @(posedge clk or i_duty_cycle) begin
         if(counter == 7'd100) begin
             counter <= 0;
         end
@@ -23,6 +23,10 @@ module pwm_generator(
             counter <= counter + 1;
             o_pwm <= 1;
         end
+    end
+
+    always @(i_duty_cycle) begin
+        counter <= 0;
     end
 
 endmodule
