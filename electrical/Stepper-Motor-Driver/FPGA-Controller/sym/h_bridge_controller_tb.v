@@ -31,7 +31,7 @@ module h_bridge_controller_tb;
 
     initial begin
         drive_state = `H_BRIDGE_DRIVE_POS;
-        decay_state = `H_BRIDGE_FAST_DECAY;
+        decay_state = `H_BRIDGE_SLOW_DECAY;
         duty_cycle = 30;
         clk = 0;
 

@@ -11,66 +11,90 @@ module h_bridge_controller(
         input i_decay_state,
         input [6:0] i_duty_cycle,
 
-        output o_mos_left_high,
+        output reg o_mos_left_high,
         output reg o_mos_left_low,
-        output o_mos_right_high,
+        output reg o_mos_right_high,
         output reg o_mos_right_low
     );
 
-    reg [6:0] duty_cycle_left;
-    reg [6:0] duty_cycle_right;
+    wire pwm_left;
+    wire pwm_right;
 
     pwm_generator pwm_left_high(
                       .clk(clk),
-                      .i_duty_cycle(duty_cycle_left),
-                      .o_pwm(o_mos_left_high)
+                      .i_duty_cycle(i_duty_cycle),
+                      .o_pwm(pwm_left)
                   );
 
     pwm_generator pwm_right_high(
                       .clk(clk),
-                      .i_duty_cycle(duty_cycle_right),
-                      .o_pwm(o_mos_right_high)
+                      .i_duty_cycle(i_duty_cycle),
+                      .o_pwm(pwm_right)
                   );
 
-    always @(negedge o_mos_left_high or negedge o_mos_right_high) begin
-        case(i_decay_state)
-            `H_BRIDGE_FAST_DECAY: begin
-                // TODO: Maybe switch on other set of MOSFETs during decay period as to not rely on body diodes?
-                // So if we were going in pos. direction, switch on MOSFETs for neg. direction until current decays to 0
-                o_mos_left_low <= 0;
-                o_mos_right_low <= 0;
-            end
-            default /*`H_BRIDGE_SLOW_DECAY*/: begin
-                o_mos_left_low <= 1;
-                o_mos_right_low <= 1;
-            end
-        endcase
-    end
+    always @(*) begin
+        o_mos_left_high = 0;
+        o_mos_right_high = 0;
+        o_mos_left_low = 0;
+        o_mos_right_low = 0;
 
-    always @(posedge o_mos_left_high or posedge o_mos_right_high or i_drive_state) begin
-        case (i_drive_state)
+        case(i_drive_state)
             `H_BRIDGE_DRIVE_POS: begin
-                duty_cycle_right <= 0;
-                o_mos_left_low <= 0;
+                if(pwm_left) begin
+                    o_mos_left_high = 1;
+                    o_mos_right_low = 1;
+                end
+                else begin
+                    case (i_decay_state)
+                        `H_BRIDGE_SLOW_DECAY: begin
+                            o_mos_left_low  = 1;
+                            o_mos_right_low = 1;
+                        end
 
-                duty_cycle_left <= i_duty_cycle;
-                o_mos_right_low <= 1;
+                        `H_BRIDGE_FAST_DECAY: begin
+                            o_mos_left_low  = 0;
+                            o_mos_right_low = 0;
+                        end
+                    endcase
+                end
+
             end
             `H_BRIDGE_DRIVE_NEG: begin
-                duty_cycle_left <= 0;
-                o_mos_right_low <= 0;
+                if(pwm_right) begin
+                    o_mos_right_high = 1;
+                    o_mos_left_low = 1;
+                end
+                else begin
+                    case (i_decay_state)
+                        `H_BRIDGE_SLOW_DECAY: begin
+                            o_mos_left_low  = 1;
+                            o_mos_right_low = 1;
+                        end
 
-                duty_cycle_right <= i_duty_cycle;
-                o_mos_left_low <= 1;
+                        `H_BRIDGE_FAST_DECAY: begin
+                            o_mos_left_low  = 0;
+                            o_mos_right_low = 0;
+                        end
+                    endcase
+                end
+
             end
             default /*H_BRIDGE_OFF*/: begin
-                duty_cycle_left <= 0;
-                duty_cycle_right <= 0;
+                case (i_decay_state)
+                    `H_BRIDGE_SLOW_DECAY: begin
+                        o_mos_left_low  = 1;
+                        o_mos_right_low = 1;
+                    end
 
-                // TODO: Do we need to case(i_decay_state) here again to set slow/fast decay for H-Bridge that still needs to decay?
+                    `H_BRIDGE_FAST_DECAY: begin
+                        // TODO: Maybe switch on other set of MOSFETs during decay period as to not rely on body diodes?
+                        // So if we were going in pos. direction, switch on MOSFETs for neg. direction until current decays to 0
+                        o_mos_left_low  = 0;
+                        o_mos_right_low = 0;
+                    end
+                endcase
             end
         endcase
     end
-
 
 endmodule
