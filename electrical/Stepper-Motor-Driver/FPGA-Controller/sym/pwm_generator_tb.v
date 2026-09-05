@@ -3,18 +3,21 @@
 module pwm_generator_tb;
 
     reg clk;
-    reg [6:0] duty_cycle;
+    reg rst_n;
+    reg [8:0] duty_cycle;
     wire gate;
 
-    pwm_generator dut(
+    pwm_generator #(.PWM_FREQ(20000)) dut(
                       .clk(clk),
+                      .rst_n(rst_n),
                       .i_duty_cycle(duty_cycle),
                       .o_pwm(gate)
                   );
 
     initial begin
-        duty_cycle = 7'd50;
+        duty_cycle = 77;
         clk = 0;
+        rst_n = 0;
 
         $dumpfile("waveform.vcd");
         $dumpvars(0, pwm_generator_tb);
@@ -28,6 +31,7 @@ module pwm_generator_tb;
     always #CLK_HALF_PERIOD clk = ~clk;
 
     always @(posedge clk) begin
+        rst_n <= 1;
         // #10000
 
         //  if(duty_cycle == 7'd100) begin

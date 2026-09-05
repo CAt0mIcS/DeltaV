@@ -5,28 +5,30 @@
 * In fast decay, o_mos_left_high = o_mos_right_low or o_mos_right_high = o_mos_left_low
 */
 
-module h_bridge_controller(
-        input clk,
-        input [1:0] i_drive_state,
-        input i_decay_state,
-        input [6:0] i_duty_cycle,
+module h_bridge_controller
+    # (parameter PWM_FREQ = 25000)
+      (
+          input clk,
+          input [1:0] i_drive_state,
+          input i_decay_state,
+          input [8:0] i_duty_cycle,
 
-        output reg o_mos_left_high,
-        output reg o_mos_left_low,
-        output reg o_mos_right_high,
-        output reg o_mos_right_low
-    );
+          output reg o_mos_left_high,
+          output reg o_mos_left_low,
+          output reg o_mos_right_high,
+          output reg o_mos_right_low
+      );
 
     wire pwm_left;
     wire pwm_right;
 
-    pwm_generator pwm_left_high(
+    pwm_generator #(.PWM_FREQ(PWM_FREQ)) pwm_left_high(
                       .clk(clk),
                       .i_duty_cycle(i_duty_cycle),
                       .o_pwm(pwm_left)
                   );
 
-    pwm_generator pwm_right_high(
+    pwm_generator #(.PWM_FREQ(PWM_FREQ)) pwm_right_high(
                       .clk(clk),
                       .i_duty_cycle(i_duty_cycle),
                       .o_pwm(pwm_right)

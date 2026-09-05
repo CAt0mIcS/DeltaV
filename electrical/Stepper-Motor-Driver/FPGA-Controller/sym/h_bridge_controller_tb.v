@@ -16,9 +16,9 @@ module h_bridge_controller_tb;
 
     reg [1:0] drive_state;
     reg decay_state;
-    reg [6:0] duty_cycle;
+    reg [8:0] duty_cycle;
 
-    h_bridge_controller dut(
+    h_bridge_controller #(.PWM_FREQ(267000)) dut(
                             .clk(clk),
                             .i_drive_state(drive_state),
                             .i_decay_state(decay_state),
@@ -32,7 +32,7 @@ module h_bridge_controller_tb;
     initial begin
         drive_state = `H_BRIDGE_DRIVE_POS;
         decay_state = `H_BRIDGE_SLOW_DECAY;
-        duty_cycle = 30;
+        duty_cycle = 77;
         clk = 0;
 
         $dumpfile("waveform.vcd");
