@@ -48,7 +48,7 @@ module ADS7042_tb;
 
     always @(posedge data_available) begin
         final_serial_output <= current;
-        data_bit <= ~data_bit;
+        // data_bit <= ~data_bit;
     end
 
 endmodule
