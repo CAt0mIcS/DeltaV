@@ -10,8 +10,7 @@ module input_step (
     );
 
     reg step_buffered = 0;
-    wire step_rising_edge;
-    assign step_rising_edge = i_step && !step_buffered;
+    wire step_rising_edge = i_step && !step_buffered;
 
     initial begin
         o_target_step = 0;
