@@ -661,7 +661,7 @@
         "uuid": "c25060f1-f2f3-4cbd-b6ee-5f66e19502f5"
       }
     ],
-    "used_designators": "Q1-14,M2,U1-10,J1-2,R1-56,#PWR1-65,D1-24,C1-25,RLVK25R010DE1-2",
+    "used_designators": "Q1-14,M2,U1-10,J1-3,#FLG1-4,R1-56,#PWR1-65,D1-24,C1-27,RLVK25R010DE1-2,L1",
     "variants": []
   },
   "sheets": [
@@ -700,6 +700,10 @@
     [
       "dc8574df-72f0-4dd6-9c05-ed1f6574d07d",
       "Current Sensor B"
+    ],
+    [
+      "f7f2b416-62ce-45ff-b1ee-d2ad4c22e608",
+      "Power"
     ]
   ],
   "text_variables": {},

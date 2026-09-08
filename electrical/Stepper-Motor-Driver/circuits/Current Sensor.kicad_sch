@@ -855,6 +855,250 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Power Symbols:+1.65V-REF"
+			(power global)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board no)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "+1.65V-REF"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Highly stable reference voltage"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "+1.65V-REF_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+1.65V-REF_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(hide yes)
+					(name "1.65V-REF"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Power Symbols:+3.3V-REF"
+			(power global)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board no)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "+3.3V-REF"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Highly stable reference voltage"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "+3.3V-REF_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+3.3V-REF_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(hide yes)
+					(name "1.65V-REF"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:+3.3V"
 			(power global)
 			(pin_numbers
@@ -1111,16 +1355,22 @@
 		)
 	)
 	(junction
-		(at 186.69 48.26)
+		(at 194.31 48.26)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "55cf78e2-f8a7-4e7b-b28f-405b100ed652")
+		(uuid "60ebd473-f133-4e0d-a2e1-b94788b88f04")
 	)
 	(junction
-		(at 189.23 48.26)
+		(at 132.08 66.04)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "66a8ad6d-75ca-4957-8490-df462787bb28")
+		(uuid "6f517e7d-ebeb-44c9-b4fb-4b199fab7677")
+	)
+	(junction
+		(at 181.61 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ea50fc31-57ad-4977-bfdd-7a47ba222938")
 	)
 	(junction
 		(at 127 48.26)
@@ -1140,13 +1390,23 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 45.72) (xy 189.23 48.26)
+			(xy 194.31 45.72) (xy 194.31 48.26)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "29c41fad-0955-4ec0-b1b4-ee897c4b4155")
+	)
+	(wire
+		(pts
+			(xy 129.54 66.04) (xy 132.08 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "31cf4e7f-f7f0-496b-986d-e3d7c72a2477")
 	)
 	(wire
 		(pts
@@ -1160,23 +1420,13 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 48.26) (xy 186.69 50.8)
+			(xy 181.61 48.26) (xy 186.69 48.26)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5c70bdba-45d9-4aa5-8e6e-c46cd591ecce")
-	)
-	(wire
-		(pts
-			(xy 186.69 45.72) (xy 186.69 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "75392369-1838-4b6a-81b3-92758d6e0374")
+		(uuid "8c5834a2-6971-429e-8963-2134a98313fd")
 	)
 	(wire
 		(pts
@@ -1200,6 +1450,26 @@
 	)
 	(wire
 		(pts
+			(xy 194.31 48.26) (xy 189.23 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b472880-a221-4535-b633-57cd809301cf")
+	)
+	(wire
+		(pts
+			(xy 186.69 48.26) (xy 186.69 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d0ea4093-5dff-4a09-80e6-67ad0498c680")
+	)
+	(wire
+		(pts
 			(xy 127 45.72) (xy 127 48.26)
 		)
 		(stroke
@@ -1207,6 +1477,16 @@
 			(type default)
 		)
 		(uuid "f13d5fb2-4b06-474b-9c55-814295c6d9b2")
+	)
+	(wire
+		(pts
+			(xy 181.61 45.72) (xy 181.61 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb66f901-7270-46a9-b766-b8ef7279eeca")
 	)
 	(wire
 		(pts
@@ -1275,7 +1555,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 189.23 45.72 0)
+		(at 194.31 45.72 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1285,7 +1565,7 @@
 		(dnp no)
 		(uuid "14c9596c-f31f-499e-889b-11f7216723c7")
 		(property "Reference" "#PWR043"
-			(at 189.23 49.53 0)
+			(at 194.31 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1296,7 +1576,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 187.96 40.64 0)
+			(at 194.31 40.64 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1306,7 +1586,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 189.23 45.72 0)
+			(at 194.31 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1317,7 +1597,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 189.23 45.72 0)
+			(at 194.31 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1328,7 +1608,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 189.23 45.72 0)
+			(at 194.31 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1438,7 +1718,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 193.04 48.26 270)
+		(at 198.12 48.26 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1448,7 +1728,7 @@
 		(dnp no)
 		(uuid "22af991f-6ce9-4308-b8cc-e3fcfb9c53e0")
 		(property "Reference" "C3"
-			(at 193.04 42.672 90)
+			(at 198.12 53.34 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1458,7 +1738,7 @@
 			)
 		)
 		(property "Value" "1uF"
-			(at 193.04 44.704 90)
+			(at 198.12 51.816 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1467,8 +1747,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 189.23 49.2252 0)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+			(at 201.93 47.2948 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1479,7 +1759,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 193.04 48.26 0)
+			(at 198.12 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1490,7 +1770,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 193.04 48.26 0)
+			(at 198.12 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1550,7 +1830,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 127 47.2948 0)
 			(hide yes)
 			(show_name no)
@@ -1708,89 +1988,6 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 186.69 45.72 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7b445cbf-01ed-42ae-bde9-aba7c972d20f")
-		(property "Reference" "#PWR044"
-			(at 186.69 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 186.69 40.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 186.69 45.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 186.69 45.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 186.69 45.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "17eee908-3e7b-47ce-980e-81340dc852d0")
-		)
-		(instances
-			(project "Stepper Motor Driver"
-				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/06fa326d-3253-4b51-93b8-81e3e564f7d6"
-					(reference "#PWR044")
-					(unit 1)
-				)
-				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/dc8574df-72f0-4dd6-9c05-ed1f6574d07d"
-					(reference "#PWR051")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
 		(at 127 45.72 0)
 		(unit 1)
 		(body_style 1)
@@ -1866,88 +2063,6 @@
 				)
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/dc8574df-72f0-4dd6-9c05-ed1f6574d07d"
 					(reference "#PWR047")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 129.54 66.04 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "89a3fbc8-080d-4ba8-9c76-4c134885db6b")
-		(property "Reference" "#PWR026"
-			(at 129.54 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 129.54 71.12 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 129.54 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 129.54 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 129.54 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "1f5d62b6-245e-4291-a963-2cb184b2813b")
-		)
-		(instances
-			(project "Stepper Motor Driver"
-				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/06fa326d-3253-4b51-93b8-81e3e564f7d6"
-					(reference "#PWR026")
-					(unit 1)
-				)
-				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/dc8574df-72f0-4dd6-9c05-ed1f6574d07d"
-					(reference "#PWR048")
 					(unit 1)
 				)
 			)
@@ -2056,18 +2171,20 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 182.88 48.26 90)
+		(lib_id "Power Symbols:+3.3V-REF")
+		(at 181.61 45.72 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
+		(in_bom no)
+		(on_board no)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "93b83682-1b43-45c5-8bdd-289229d9eb06")
-		(property "Reference" "C2"
-			(at 182.88 42.164 90)
+		(fields_autoplaced yes)
+		(uuid "91a6daeb-4513-44c4-868c-8fdcb0209ad5")
+		(property "Reference" "#PWR044"
+			(at 181.61 45.72 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2076,8 +2193,8 @@
 				)
 			)
 		)
-		(property "Value" "1uF"
-			(at 182.88 44.704 90)
+		(property "Value" "+3.3V-REF"
+			(at 181.61 40.64 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2087,7 +2204,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 186.69 47.2948 0)
+			(at 181.61 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2098,7 +2215,87 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 182.88 48.26 0)
+			(at 181.61 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Highly stable reference voltage"
+			(at 181.61 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "588b7f9b-5991-4a36-8e66-6bd46b4f447b")
+		)
+		(instances
+			(project "Stepper Motor Driver"
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/06fa326d-3253-4b51-93b8-81e3e564f7d6"
+					(reference "#PWR044")
+					(unit 1)
+				)
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/dc8574df-72f0-4dd6-9c05-ed1f6574d07d"
+					(reference "#PWR051")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 177.8 48.26 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "93b83682-1b43-45c5-8bdd-289229d9eb06")
+		(property "Reference" "C2"
+			(at 177.8 53.848 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1uF"
+			(at 177.8 51.816 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+			(at 173.99 49.2252 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 177.8 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2109,7 +2306,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 182.88 48.26 0)
+			(at 177.8 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2172,7 +2369,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "LVK25R010DE:LVK25R010DE"
+		(property "Footprint" "Resistor_SMD:R_Shunt_Ohmite_LVK25"
 			(at 104.902 58.42 90)
 			(hide yes)
 			(show_name no)
@@ -2313,7 +2510,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 179.07 48.26 270)
+		(at 173.99 48.26 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2323,7 +2520,7 @@
 		(dnp no)
 		(uuid "ca0269ae-06cb-48a0-a398-238dd430d85d")
 		(property "Reference" "#PWR030"
-			(at 172.72 48.26 0)
+			(at 167.64 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2334,7 +2531,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 173.736 48.26 90)
+			(at 168.656 48.26 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2344,7 +2541,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 179.07 48.26 0)
+			(at 173.99 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2355,7 +2552,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 179.07 48.26 0)
+			(at 173.99 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2366,7 +2563,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 179.07 48.26 0)
+			(at 173.99 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2394,7 +2591,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 196.85 48.26 90)
+		(at 201.93 48.26 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2404,7 +2601,7 @@
 		(dnp no)
 		(uuid "cd1f2aac-8c41-448c-afa2-b45de782569e")
 		(property "Reference" "#PWR045"
-			(at 203.2 48.26 0)
+			(at 208.28 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2415,7 +2612,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 202.184 48.26 90)
+			(at 207.264 48.26 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2425,7 +2622,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 196.85 48.26 0)
+			(at 201.93 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2436,7 +2633,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 196.85 48.26 0)
+			(at 201.93 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2447,7 +2644,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 196.85 48.26 0)
+			(at 201.93 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2637,18 +2834,19 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 132.08 66.04 0)
+		(lib_id "Power Symbols:+1.65V-REF")
+		(at 132.08 66.04 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
+		(in_bom no)
+		(on_board no)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "f1f083b8-5923-4e27-9adb-7ecb53a39b00")
-		(property "Reference" "#PWR027"
-			(at 132.08 72.39 0)
+		(fields_autoplaced yes)
+		(uuid "f8489e79-4786-480f-851f-8e07c69ef17e")
+		(property "Reference" "#PWR026"
+			(at 132.08 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2658,8 +2856,8 @@
 				)
 			)
 		)
-		(property "Value" "GND"
-			(at 136.144 67.818 0)
+		(property "Value" "+1.65V-REF"
+			(at 132.08 71.12 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2690,7 +2888,7 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+		(property "Description" "Highly stable reference voltage"
 			(at 132.08 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -2702,16 +2900,16 @@
 			)
 		)
 		(pin "1"
-			(uuid "c854ded0-94ee-4ad5-acdc-556d8e1d736e")
+			(uuid "98a6456c-8cb4-4e76-9dff-4fca24ae430d")
 		)
 		(instances
 			(project "Stepper Motor Driver"
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/06fa326d-3253-4b51-93b8-81e3e564f7d6"
-					(reference "#PWR027")
+					(reference "#PWR026")
 					(unit 1)
 				)
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/dc8574df-72f0-4dd6-9c05-ed1f6574d07d"
-					(reference "#PWR049")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
