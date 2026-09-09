@@ -1753,7 +1753,7 @@
 	)
 	(text "Connect terminal 1 to coil A and back to terminal 2.\nConnect terminal 3 to coil B and back to terminal 4.\n"
 		(exclude_from_sim no)
-		(at 141.986 86.868 0)
+		(at 141.732 86.868 0)
 		(effects
 			(font
 				(size 1.27 1.27)

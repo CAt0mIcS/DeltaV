@@ -1,7 +1,5 @@
 (fp_lib_table
 	(version 7)
-	(lib (name "LVK25R010DE") (type "KiCad") (uri "C:/Users/Admin/Documents/Engineering/Projects/DeltaV/electrical/footprints/LVK25R010DE.pretty") (options "") (descr ""))
 	(lib (name "UCC27710D") (type "KiCad") (uri "C:/Users/Admin/Documents/Engineering/Projects/DeltaV/electrical/footprints/UCC27710D.pretty") (options "") (descr ""))
 	(lib (name "IRF530NPBF") (type "KiCad") (uri "C:/Users/Admin/Documents/Engineering/Projects/DeltaV/electrical/footprints/IRF530NPBF.pretty") (options "") (descr ""))
-	(lib (name "TPS560430XDBVR") (type "KiCad") (uri "C:/Users/Admin/Documents/Engineering/Projects/DeltaV/electrical/footprints/TPS560430XDBVR.pretty") (options "") (descr ""))
 )
