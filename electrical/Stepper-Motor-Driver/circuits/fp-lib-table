@@ -2,4 +2,5 @@
 	(version 7)
 	(lib (name "UCC27710D") (type "KiCad") (uri "C:/Users/Admin/Documents/Engineering/Projects/DeltaV/electrical/footprints/UCC27710D.pretty") (options "") (descr ""))
 	(lib (name "IRF530NPBF") (type "KiCad") (uri "C:/Users/Admin/Documents/Engineering/Projects/DeltaV/electrical/footprints/IRF530NPBF.pretty") (options "") (descr ""))
+	(lib (name "Tang Nano 9k") (type "KiCad") (uri "C:/Users/Admin/Documents/Engineering/Projects/DeltaV/electrical/footprints/Tang Nano 9k.pretty") (options "") (descr ""))
 )
