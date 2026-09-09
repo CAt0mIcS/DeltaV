@@ -502,6 +502,129 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -1355,10 +1478,28 @@
 		)
 	)
 	(junction
+		(at 181.61 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1b4001ca-b06a-4528-bc13-27ebacdb103a")
+	)
+	(junction
 		(at 194.31 48.26)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "60ebd473-f133-4e0d-a2e1-b94788b88f04")
+		(uuid "1e719cab-ea78-4c18-ab18-4e865c5dbca6")
+	)
+	(junction
+		(at 206.9298 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "324de04a-5981-4cc9-a01d-c6e35a662904")
+	)
+	(junction
+		(at 207.0099 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "638e1f18-2d40-4280-ab3c-264b2a0b5788")
 	)
 	(junction
 		(at 132.08 66.04)
@@ -1367,16 +1508,42 @@
 		(uuid "6f517e7d-ebeb-44c9-b4fb-4b199fab7677")
 	)
 	(junction
-		(at 181.61 48.26)
+		(at 153.67 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "ea50fc31-57ad-4977-bfdd-7a47ba222938")
+		(uuid "8d748c9e-10ea-4a14-9625-4bfb6a2e9e87")
+	)
+	(junction
+		(at 207.01 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bac8673b-0950-4dcc-98dc-15ce481843b9")
 	)
 	(junction
 		(at 127 48.26)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "eabace01-6b4b-433f-bb4f-6aea36989465")
+	)
+	(wire
+		(pts
+			(xy 194.31 48.26) (xy 199.39 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1dc2bf82-4e65-47f5-bad0-6be82fe6f2b2")
+	)
+	(wire
+		(pts
+			(xy 181.61 48.26) (xy 186.69 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1eba061c-d214-459a-81ca-8cd11d022a8f")
 	)
 	(wire
 		(pts
@@ -1410,6 +1577,16 @@
 	)
 	(wire
 		(pts
+			(xy 215.9 63.5) (xy 207.0099 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34738c84-1b15-4940-af3f-d88ad228ea73")
+	)
+	(wire
+		(pts
 			(xy 189.23 48.26) (xy 189.23 50.8)
 		)
 		(stroke
@@ -1420,13 +1597,43 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 48.26) (xy 186.69 48.26)
+			(xy 206.9298 60.96) (xy 204.47 60.96)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8c5834a2-6971-429e-8963-2134a98313fd")
+		(uuid "5f2067e4-588b-40d7-923e-64ed66fee564")
+	)
+	(wire
+		(pts
+			(xy 207.01 58.42) (xy 204.47 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62e6cd00-c2df-4b8b-be1f-412fda973317")
+	)
+	(wire
+		(pts
+			(xy 153.67 58.42) (xy 173.99 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a85c2eb-72b9-4ec2-aeeb-f12010fd47ef")
+	)
+	(wire
+		(pts
+			(xy 207.0099 63.5) (xy 204.47 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8863d65b-9430-4db6-b709-e5c7aefd8c88")
 	)
 	(wire
 		(pts
@@ -1440,7 +1647,7 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 58.42) (xy 173.99 58.42)
+			(xy 137.16 58.42) (xy 153.67 58.42)
 		)
 		(stroke
 			(width 0)
@@ -1450,13 +1657,13 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 48.26) (xy 189.23 48.26)
+			(xy 181.61 45.72) (xy 181.61 48.26)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9b472880-a221-4535-b633-57cd809301cf")
+		(uuid "9d886e73-1c1b-465d-8432-e38cdc2d390e")
 	)
 	(wire
 		(pts
@@ -1470,6 +1677,26 @@
 	)
 	(wire
 		(pts
+			(xy 215.9 58.42) (xy 207.01 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d386e657-62c7-47e5-9c80-5159438b7b8b")
+	)
+	(wire
+		(pts
+			(xy 189.23 48.26) (xy 194.31 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d74fd92c-b233-4459-ab90-fcca669dd2ed")
+	)
+	(wire
+		(pts
 			(xy 127 45.72) (xy 127 48.26)
 		)
 		(stroke
@@ -1480,13 +1707,13 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 45.72) (xy 181.61 48.26)
+			(xy 215.9 60.96) (xy 206.9298 60.96)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "fb66f901-7270-46a9-b766-b8ef7279eeca")
+		(uuid "fb480a53-28c7-43e6-a27e-d1f459e02e02")
 	)
 	(wire
 		(pts
@@ -1500,7 +1727,7 @@
 	)
 	(hierarchical_label "~{CS}"
 		(shape input)
-		(at 204.47 63.5 0)
+		(at 215.9 63.5 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1511,7 +1738,7 @@
 	)
 	(hierarchical_label "SCLK"
 		(shape input)
-		(at 204.47 60.96 0)
+		(at 215.9 60.96 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1544,7 +1771,7 @@
 	)
 	(hierarchical_label "SDO"
 		(shape output)
-		(at 204.47 58.42 0)
+		(at 215.9 58.42 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1552,6 +1779,90 @@
 			(justify left)
 		)
 		(uuid "e2327433-5cc6-43da-9db5-38a251bbb89d")
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 206.9298 60.96 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "03462a0f-e95a-4634-9d60-1f33a34a6d83")
+		(property "Reference" "TP29"
+			(at 209.4698 56.3879 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 209.4698 58.9279 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical"
+			(at 212.0098 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 212.0098 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 206.9298 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "aad23345-f72f-43bd-b3a2-6759126dfc67")
+		)
+		(instances
+			(project "Stepper Motor Driver"
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/06fa326d-3253-4b51-93b8-81e3e564f7d6"
+					(reference "TP29")
+					(unit 1)
+				)
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/dc8574df-72f0-4dd6-9c05-ed1f6574d07d"
+					(reference "TP30")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:+3.3V")
@@ -2069,6 +2380,90 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 207.01 58.42 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8504b906-de36-41d0-b423-48741a285658")
+		(property "Reference" "TP27"
+			(at 209.55 53.8479 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 209.55 56.3879 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical"
+			(at 212.09 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 212.09 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 207.01 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "10ccf4ad-6237-4a56-a236-fb895614cdb3")
+		)
+		(instances
+			(project "Stepper Motor Driver"
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/06fa326d-3253-4b51-93b8-81e3e564f7d6"
+					(reference "TP27")
+					(unit 1)
+				)
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/dc8574df-72f0-4dd6-9c05-ed1f6574d07d"
+					(reference "TP28")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Amplifier_Current:INA240A2PW")
 		(at 129.54 58.42 0)
 		(unit 1)
@@ -2078,10 +2473,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "903d58c9-8ba9-4304-a1b5-f4be480cdf1a")
 		(property "Reference" "U2"
-			(at 142.24 51.9998 0)
+			(at 140.462 53.086 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2091,7 +2485,7 @@
 			)
 		)
 		(property "Value" "INA240A2PW"
-			(at 142.24 54.5398 0)
+			(at 140.462 55.626 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2422,6 +2816,90 @@
 				)
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/dc8574df-72f0-4dd6-9c05-ed1f6574d07d"
 					(reference "R_Shunt2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 207.0099 63.5 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9632d7ed-340f-45ee-a0bd-ce370440730a")
+		(property "Reference" "TP31"
+			(at 209.5499 58.9279 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 209.5499 61.4679 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical"
+			(at 212.0899 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 212.0899 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 207.0099 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "50829a4b-4272-4762-a47e-c41a0577aee9")
+		)
+		(instances
+			(project "Stepper Motor Driver"
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/06fa326d-3253-4b51-93b8-81e3e564f7d6"
+					(reference "TP31")
+					(unit 1)
+				)
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/dc8574df-72f0-4dd6-9c05-ed1f6574d07d"
+					(reference "TP32")
 					(unit 1)
 				)
 			)
@@ -2828,6 +3306,89 @@
 				)
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/dc8574df-72f0-4dd6-9c05-ed1f6574d07d"
 					(reference "#PWR053")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 153.67 58.42 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f3011715-beef-4f6c-a9bc-028c8ce48b3d")
+		(property "Reference" "TP19"
+			(at 156.21 53.8479 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 156.21 56.3879 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical"
+			(at 158.75 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 158.75 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 153.67 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ef90a4b5-e2e8-49eb-89e9-8a73b8b8ed2a")
+		)
+		(instances
+			(project "Stepper Motor Driver"
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/06fa326d-3253-4b51-93b8-81e3e564f7d6"
+					(reference "TP19")
+					(unit 1)
+				)
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/dc8574df-72f0-4dd6-9c05-ed1f6574d07d"
+					(reference "TP20")
 					(unit 1)
 				)
 			)
