@@ -1835,6 +1835,127 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:PWR_FLAG"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(junction
+		(at 119.38 54.61)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "077298d2-9542-4dec-8c64-e2002bfd88e0")
 	)
 	(junction
 		(at 92.71 63.5)
@@ -1855,16 +1976,16 @@
 		(uuid "31ec9059-9154-4ae7-8b4b-6be9d6cdc9ad")
 	)
 	(junction
-		(at 119.38 54.61)
+		(at 88.9 38.1)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "323280a8-1b9b-4124-98b9-d78a9cb86610")
+		(uuid "5bb47720-ea0d-4cc8-b3ba-a000e50f92fa")
 	)
 	(junction
-		(at 48.26 38.1)
+		(at 53.34 38.1)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "36858daa-6652-4bef-b79c-de9b1629a75c")
+		(uuid "a55f155b-4f20-4b23-b553-9ff92732d60d")
 	)
 	(junction
 		(at 119.38 44.45)
@@ -1885,26 +2006,16 @@
 		(uuid "c46a0d9c-663d-4bc0-b760-f2e5eee65fef")
 	)
 	(junction
-		(at 132.08 54.61)
+		(at 48.26 38.1)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "de2b6481-60c1-43c4-b876-912a40acfff5")
+		(uuid "f2a336f3-e0cc-4481-b638-a584a49547d6")
 	)
 	(junction
 		(at 100.33 50.8)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f7ef5469-e8aa-40a8-a0ff-cdb58ff62aed")
-	)
-	(wire
-		(pts
-			(xy 48.26 38.1) (xy 53.34 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "019aab85-9613-4768-a287-c12e7571aba2")
 	)
 	(wire
 		(pts
@@ -1948,7 +2059,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 44.45) (xy 127 44.45)
+			(xy 119.38 44.45) (xy 134.62 44.45)
 		)
 		(stroke
 			(width 0)
@@ -1965,16 +2076,6 @@
 			(type default)
 		)
 		(uuid "427c4a18-2145-4a6b-828a-6d84b0da1dce")
-	)
-	(wire
-		(pts
-			(xy 73.66 30.48) (xy 74.93 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "585985d1-770b-4325-b5e3-a2c0810ca22b")
 	)
 	(wire
 		(pts
@@ -1998,23 +2099,13 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 30.48) (xy 100.33 30.48)
+			(xy 81.28 30.48) (xy 100.33 30.48)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "61bb53fc-7f0d-48a8-8204-c69b53cac735")
-	)
-	(wire
-		(pts
-			(xy 135.89 54.61) (xy 132.08 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "67a114e0-eec1-4d40-82bc-9cda03d6de3f")
 	)
 	(wire
 		(pts
@@ -2038,6 +2129,16 @@
 	)
 	(wire
 		(pts
+			(xy 48.26 38.1) (xy 53.34 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a867cf7-054e-4e4c-bf8e-9572fe84edc1")
+	)
+	(wire
+		(pts
 			(xy 119.38 44.45) (xy 119.38 45.72)
 		)
 		(stroke
@@ -2058,7 +2159,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 69.85) (xy 127 69.85)
+			(xy 111.76 69.85) (xy 134.62 69.85)
 		)
 		(stroke
 			(width 0)
@@ -2078,7 +2179,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 46.99) (xy 132.08 54.61)
+			(xy 139.7 46.99) (xy 139.7 62.23)
 		)
 		(stroke
 			(width 0)
@@ -2188,16 +2289,6 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 45.72) (xy 40.64 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d73b3c69-345d-4a22-a2a3-5541de3208b0")
-	)
-	(wire
-		(pts
 			(xy 119.38 53.34) (xy 119.38 54.61)
 		)
 		(stroke
@@ -2218,7 +2309,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 54.61) (xy 132.08 54.61)
+			(xy 119.38 54.61) (xy 143.51 54.61)
 		)
 		(stroke
 			(width 0)
@@ -2226,19 +2317,9 @@
 		)
 		(uuid "f2b9d516-8839-4a1b-b11d-012b4d4ab222")
 	)
-	(wire
-		(pts
-			(xy 132.08 54.61) (xy 132.08 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fedb95b0-ffb1-41c1-8a87-2944f9c2e935")
-	)
 	(hierarchical_label "OUT"
 		(shape bidirectional)
-		(at 135.89 54.61 0)
+		(at 143.51 54.61 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2268,95 +2349,6 @@
 			(justify right)
 		)
 		(uuid "5d893f08-c097-4af3-882e-4542a98caa46")
-	)
-	(symbol
-		(lib_id "power:+12V")
-		(at 36.83 45.72 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "09b247f1-efb8-4545-bec1-2a40599c760d")
-		(property "Reference" "#PWR022"
-			(at 40.64 45.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+12V"
-			(at 32.512 45.72 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 36.83 45.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 36.83 45.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 36.83 45.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "2a1b92c9-6142-4010-9db0-2abf3ca10c20")
-		)
-		(instances
-			(project "Stepper Motor Driver"
-				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
-					(reference "#PWR035")
-					(unit 1)
-				)
-				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
-					(reference "#PWR038")
-					(unit 1)
-				)
-				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
-					(reference "#PWR032")
-					(unit 1)
-				)
-				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
-					(reference "#PWR022")
-					(unit 1)
-				)
-			)
-		)
 	)
 	(symbol
 		(lib_id "Diode:BAT43")
@@ -2676,6 +2668,96 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 53.34 38.1 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "22455d5e-4d00-45ea-a987-463a824f2002")
+		(property "Reference" "#FLG02"
+			(at 53.34 36.195 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 53.34 33.02 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 53.34 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 53.34 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 53.34 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "86252bd9-8c17-413d-8b62-783606486e12")
+		)
+		(instances
+			(project "Stepper Motor Driver"
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
+					(reference "#FLG07")
+					(unit 1)
+				)
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
+					(reference "#FLG06")
+					(unit 1)
+				)
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
+					(reference "#FLG03")
+					(unit 1)
+				)
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
+					(reference "#FLG02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Diode:BAT43")
 		(at 107.95 63.5 0)
 		(unit 1)
@@ -2805,6 +2887,96 @@
 				)
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
 					(reference "D13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 40.64 45.72 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "30d976d7-cad9-4763-83ce-95955951def9")
+		(property "Reference" "#PWR022"
+			(at 40.64 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+12V"
+			(at 40.64 50.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 40.64 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 40.64 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 40.64 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "57412a23-74d0-4026-b406-783bef1b87c3")
+		)
+		(instances
+			(project "Stepper Motor Driver"
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
+					(reference "#PWR038")
+					(unit 1)
+				)
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
+					(reference "#PWR035")
+					(unit 1)
+				)
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
+					(reference "#PWR032")
+					(unit 1)
+				)
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -3014,7 +3186,7 @@
 	)
 	(symbol
 		(lib_id "IRF530NPBF:IRF530NPBF")
-		(at 129.54 41.91 0)
+		(at 137.16 41.91 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3025,7 +3197,7 @@
 		(fields_autoplaced yes)
 		(uuid "5aefc641-f1f2-40bd-92a0-82cf84a4219b")
 		(property "Reference" "Q3"
-			(at 135.89 40.6399 0)
+			(at 143.51 40.6399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3036,7 +3208,7 @@
 			)
 		)
 		(property "Value" "IRF530NPBF"
-			(at 135.89 43.1799 0)
+			(at 143.51 43.1799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3047,7 +3219,7 @@
 			)
 		)
 		(property "Footprint" "IRF530NPBF:IRF530NPBF"
-			(at 129.54 41.91 0)
+			(at 137.16 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3059,7 +3231,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 129.54 41.91 0)
+			(at 137.16 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3070,7 +3242,7 @@
 			)
 		)
 		(property "Description" "N-Channel 100 V 17A (Tc) 70W (Tc) Through Hole TO-220AB"
-			(at 129.54 41.91 0)
+			(at 137.16 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3082,7 +3254,7 @@
 			)
 		)
 		(property "MF" "Infineon Technologies"
-			(at 129.54 41.91 0)
+			(at 137.16 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3094,7 +3266,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" "19.3 mm"
-			(at 129.54 41.91 0)
+			(at 137.16 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3106,7 +3278,7 @@
 			)
 		)
 		(property "Package" "None"
-			(at 129.54 41.91 0)
+			(at 137.16 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3118,7 +3290,7 @@
 			)
 		)
 		(property "Price" "None"
-			(at 129.54 41.91 0)
+			(at 137.16 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3130,7 +3302,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/IRF530NPBF/Infineon/view-part/?ref=eda"
-			(at 129.54 41.91 0)
+			(at 137.16 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3142,7 +3314,7 @@
 			)
 		)
 		(property "STANDARD" "IPC-7351B"
-			(at 129.54 41.91 0)
+			(at 137.16 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3154,7 +3326,7 @@
 			)
 		)
 		(property "PARTREV" "01/30/04"
-			(at 129.54 41.91 0)
+			(at 137.16 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3166,7 +3338,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/IRF530NPBF/Infineon/view-part/?ref=snap"
-			(at 129.54 41.91 0)
+			(at 137.16 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3178,7 +3350,7 @@
 			)
 		)
 		(property "MP" "IRF530NPBF"
-			(at 129.54 41.91 0)
+			(at 137.16 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3190,7 +3362,7 @@
 			)
 		)
 		(property "Availability" "In Stock"
-			(at 129.54 41.91 0)
+			(at 137.16 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3202,7 +3374,7 @@
 			)
 		)
 		(property "MANUFACTURER" "Infineon Technologies"
-			(at 129.54 41.91 0)
+			(at 137.16 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3214,7 +3386,7 @@
 			)
 		)
 		(property "Sim.Library" "${KIPRJMOD}/../../../../spice models/irf530n.spi"
-			(at 129.54 41.91 0)
+			(at 137.16 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3225,7 +3397,7 @@
 			)
 		)
 		(property "Sim.Name" "irf530n"
-			(at 129.54 41.91 0)
+			(at 137.16 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3236,7 +3408,7 @@
 			)
 		)
 		(property "Sim.Device" "SUBCKT"
-			(at 129.54 41.91 0)
+			(at 137.16 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3247,7 +3419,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=2 2=1 3=3"
-			(at 129.54 41.91 0)
+			(at 137.16 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3653,7 +3825,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 132.08 72.39 0)
+		(at 139.7 72.39 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3664,7 +3836,7 @@
 		(fields_autoplaced yes)
 		(uuid "7f2e6a65-c93b-4d7d-a37d-ffa7f6c5a758")
 		(property "Reference" "#PWR04"
-			(at 132.08 78.74 0)
+			(at 139.7 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3675,7 +3847,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 132.08 77.47 0)
+			(at 139.7 77.47 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3685,7 +3857,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 132.08 72.39 0)
+			(at 139.7 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3696,7 +3868,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 132.08 72.39 0)
+			(at 139.7 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3707,7 +3879,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 132.08 72.39 0)
+			(at 139.7 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3925,7 +4097,7 @@
 	)
 	(symbol
 		(lib_id "Diode:1N5819")
-		(at 78.74 30.48 180)
+		(at 77.47 30.48 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3936,7 +4108,7 @@
 		(fields_autoplaced yes)
 		(uuid "a51c94ae-d1d9-4195-ae17-c12180f5def0")
 		(property "Reference" "D6"
-			(at 79.0575 24.13 0)
+			(at 77.7875 24.13 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3946,7 +4118,7 @@
 			)
 		)
 		(property "Value" "1N5819"
-			(at 79.0575 26.67 0)
+			(at 77.7875 26.67 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3956,7 +4128,7 @@
 			)
 		)
 		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
-			(at 78.74 26.035 0)
+			(at 77.47 26.035 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3967,7 +4139,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.vishay.com/docs/88525/1n5817.pdf"
-			(at 78.74 30.48 0)
+			(at 77.47 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3978,7 +4150,7 @@
 			)
 		)
 		(property "Description" "40V 1A Schottky Barrier Rectifier Diode, DO-41"
-			(at 78.74 30.48 0)
+			(at 77.47 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3989,7 +4161,7 @@
 			)
 		)
 		(property "Sim.Library" "${KIPRJMOD}/../../../../spice models/1n5819.lib"
-			(at 78.74 30.48 0)
+			(at 77.47 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4000,7 +4172,7 @@
 			)
 		)
 		(property "Sim.Name" "1N5819"
-			(at 78.74 30.48 0)
+			(at 77.47 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4011,7 +4183,7 @@
 			)
 		)
 		(property "Sim.Device" "SUBCKT"
-			(at 78.74 30.48 0)
+			(at 77.47 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4022,7 +4194,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 78.74 30.48 0)
+			(at 77.47 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4154,7 +4326,7 @@
 	)
 	(symbol
 		(lib_id "IRF530NPBF:IRF530NPBF")
-		(at 129.54 67.31 0)
+		(at 137.16 67.31 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4165,7 +4337,7 @@
 		(fields_autoplaced yes)
 		(uuid "ba995986-1eaf-481b-bdd4-b6d2920e929e")
 		(property "Reference" "Q4"
-			(at 135.89 66.0399 0)
+			(at 143.51 66.0399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4176,7 +4348,7 @@
 			)
 		)
 		(property "Value" "IRF530NPBF"
-			(at 135.89 68.5799 0)
+			(at 143.51 68.5799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4187,7 +4359,7 @@
 			)
 		)
 		(property "Footprint" "IRF530NPBF:IRF530NPBF"
-			(at 129.54 67.31 0)
+			(at 137.16 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4199,7 +4371,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 129.54 67.31 0)
+			(at 137.16 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4210,7 +4382,7 @@
 			)
 		)
 		(property "Description" "N-Channel 100 V 17A (Tc) 70W (Tc) Through Hole TO-220AB"
-			(at 129.54 67.31 0)
+			(at 137.16 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4222,7 +4394,7 @@
 			)
 		)
 		(property "MF" "Infineon Technologies"
-			(at 129.54 67.31 0)
+			(at 137.16 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4234,7 +4406,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" "19.3 mm"
-			(at 129.54 67.31 0)
+			(at 137.16 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4246,7 +4418,7 @@
 			)
 		)
 		(property "Package" "None"
-			(at 129.54 67.31 0)
+			(at 137.16 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4258,7 +4430,7 @@
 			)
 		)
 		(property "Price" "None"
-			(at 129.54 67.31 0)
+			(at 137.16 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4270,7 +4442,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/IRF530NPBF/Infineon/view-part/?ref=eda"
-			(at 129.54 67.31 0)
+			(at 137.16 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4282,7 +4454,7 @@
 			)
 		)
 		(property "STANDARD" "IPC-7351B"
-			(at 129.54 67.31 0)
+			(at 137.16 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4294,7 +4466,7 @@
 			)
 		)
 		(property "PARTREV" "01/30/04"
-			(at 129.54 67.31 0)
+			(at 137.16 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4306,7 +4478,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/IRF530NPBF/Infineon/view-part/?ref=snap"
-			(at 129.54 67.31 0)
+			(at 137.16 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4318,7 +4490,7 @@
 			)
 		)
 		(property "MP" "IRF530NPBF"
-			(at 129.54 67.31 0)
+			(at 137.16 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4330,7 +4502,7 @@
 			)
 		)
 		(property "Availability" "In Stock"
-			(at 129.54 67.31 0)
+			(at 137.16 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4342,7 +4514,7 @@
 			)
 		)
 		(property "MANUFACTURER" "Infineon Technologies"
-			(at 129.54 67.31 0)
+			(at 137.16 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4354,7 +4526,7 @@
 			)
 		)
 		(property "Sim.Library" "${KIPRJMOD}/../../../../spice models/irf530n.spi"
-			(at 129.54 67.31 0)
+			(at 137.16 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4365,7 +4537,7 @@
 			)
 		)
 		(property "Sim.Name" "irf530n"
-			(at 129.54 67.31 0)
+			(at 137.16 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4376,7 +4548,7 @@
 			)
 		)
 		(property "Sim.Device" "SUBCKT"
-			(at 129.54 67.31 0)
+			(at 137.16 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4387,7 +4559,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=2 2=1 3=3"
-			(at 129.54 67.31 0)
+			(at 137.16 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4614,7 +4786,7 @@
 	)
 	(symbol
 		(lib_id "power:+24V")
-		(at 132.08 36.83 0)
+		(at 139.7 36.83 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4625,7 +4797,7 @@
 		(fields_autoplaced yes)
 		(uuid "c800cfe8-d317-4983-bb47-ccd984fe4b73")
 		(property "Reference" "#PWR02"
-			(at 132.08 40.64 0)
+			(at 139.7 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4636,7 +4808,7 @@
 			)
 		)
 		(property "Value" "+24V"
-			(at 132.08 31.75 0)
+			(at 139.7 31.75 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4646,7 +4818,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 132.08 36.83 0)
+			(at 139.7 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4657,7 +4829,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 132.08 36.83 0)
+			(at 139.7 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4668,7 +4840,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+24V\""
-			(at 132.08 36.83 0)
+			(at 139.7 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4790,6 +4962,96 @@
 				)
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
 					(reference "R21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 88.9 38.1 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fe078bb9-2b19-4e36-b54c-8e6e21efd179")
+		(property "Reference" "#FLG08"
+			(at 88.9 36.195 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 88.9 33.02 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 88.9 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 88.9 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 88.9 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5775d44e-9c58-49ae-83b9-0b402ac1babc")
+		)
+		(instances
+			(project "Stepper Motor Driver"
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
+					(reference "#FLG012")
+					(unit 1)
+				)
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
+					(reference "#FLG011")
+					(unit 1)
+				)
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
+					(reference "#FLG010")
+					(unit 1)
+				)
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
+					(reference "#FLG08")
 					(unit 1)
 				)
 			)
