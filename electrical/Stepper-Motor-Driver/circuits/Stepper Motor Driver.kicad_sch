@@ -2048,39 +2048,39 @@
 		(uuid "ebd3f8e3-536c-4b4d-8827-856b0b5f90a4")
 	)
 	(no_connect
-		(at 101.6 162.56)
+		(at 63.5 137.16)
 		(uuid "2c7255dc-8d5f-431a-9893-acae016d53ba")
 	)
 	(no_connect
-		(at 105.41 162.56)
+		(at 59.69 137.16)
 		(uuid "3d4daf22-09f5-4c5c-b17d-ddfda1313aa3")
 	)
 	(no_connect
-		(at 120.65 162.56)
+		(at 44.45 137.16)
 		(uuid "4c689d7d-c8d2-4eeb-9941-536ae00ee1a0")
 	)
 	(no_connect
-		(at 124.46 162.56)
+		(at 40.64 137.16)
 		(uuid "92cf45ae-4550-447f-8b8f-9ed2b5d23597")
 	)
 	(no_connect
-		(at 97.79 162.56)
+		(at 67.31 137.16)
 		(uuid "9fe19b0a-20b3-4941-bc4c-11194e439bc3")
 	)
 	(no_connect
-		(at 63.5 162.56)
+		(at 101.6 137.16)
 		(uuid "a8f8d672-8486-40f4-ac56-d4ebda62aefa")
 	)
 	(no_connect
-		(at 116.84 162.56)
+		(at 48.26 137.16)
 		(uuid "c1cc6ea2-1e9e-4c71-9d85-fa24e22391c1")
 	)
 	(no_connect
-		(at 113.03 162.56)
+		(at 52.07 137.16)
 		(uuid "f85af275-d47e-49ae-b02c-a8440a416499")
 	)
 	(no_connect
-		(at 109.22 162.56)
+		(at 55.88 137.16)
 		(uuid "fe26bbc3-340a-496b-911a-c162263b92d9")
 	)
 	(wire
@@ -2883,6 +2883,36 @@
 		)
 		(uuid "016e9127-50b2-4801-bb3f-fcc8fc715424")
 	)
+	(label "DIR"
+		(at 93.98 137.16 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "01a11375-af1b-4877-9b25-7f9bc42f19dc")
+	)
+	(label "SCLKA"
+		(at 71.12 167.64 270)
+		(effects
+			(font
+				(size 0.762 0.762)
+			)
+			(justify right bottom)
+		)
+		(uuid "0405efc2-13be-4b61-a03e-e781bc77d745")
+	)
+	(label "HI1A"
+		(at 36.83 167.64 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "11d2ea69-96c1-430c-b198-d0bf5fbaab38")
+	)
 	(label "HI2B"
 		(at 219.71 64.77 270)
 		(effects
@@ -2892,6 +2922,26 @@
 			(justify right bottom)
 		)
 		(uuid "1af32c11-9284-4a3a-b0d9-38926232ed93")
+	)
+	(label "MICROSTEP_BIT3"
+		(at 82.55 137.16 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1b56efc5-ef04-437e-a2be-0cd9e6a64a2c")
+	)
+	(label "LI2B"
+		(at 52.07 167.64 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1e02671c-9cb9-45f0-b329-eca30707561b")
 	)
 	(label "SDOA"
 		(at 138.43 54.61 0)
@@ -2964,6 +3014,16 @@
 		(uuid "3d4dc1a3-cafe-4f23-835f-9daea7d78705")
 	)
 	(label "~{CS}A"
+		(at 74.93 167.64 270)
+		(effects
+			(font
+				(size 0.762 0.762)
+			)
+			(justify right bottom)
+		)
+		(uuid "4063c0a8-56ad-4903-b6e8-af1794117552")
+	)
+	(label "~{CS}A"
 		(at 138.43 59.69 0)
 		(effects
 			(font
@@ -2972,6 +3032,26 @@
 			(justify left bottom)
 		)
 		(uuid "5ea4b31a-764e-4a0d-8e5b-469e08845acc")
+	)
+	(label "HI2B"
+		(at 55.88 167.64 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "63407dde-627f-4212-8c05-c60440bb40b8")
+	)
+	(label "~{CS}B"
+		(at 86.36 167.64 270)
+		(effects
+			(font
+				(size 0.762 0.762)
+			)
+			(justify right bottom)
+		)
+		(uuid "672779cc-1d4b-4ce6-82b8-643ffc0ea5fa")
 	)
 	(label "SDOB"
 		(at 146.05 54.61 180)
@@ -2983,6 +3063,26 @@
 		)
 		(uuid "6a0fc52f-1e19-4a1f-9aa2-f1ddc27d59e5")
 	)
+	(label "SDOB"
+		(at 78.74 167.64 270)
+		(effects
+			(font
+				(size 0.762 0.762)
+			)
+			(justify right bottom)
+		)
+		(uuid "6b5e1e3c-47d5-482d-8a1a-a8492dc7e5d0")
+	)
+	(label "MICROSTEP_BIT2"
+		(at 86.36 137.16 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7e89f457-65ac-4d2b-b6ad-2d31ba06e27f")
+	)
 	(label "LI1B"
 		(at 240.03 64.77 270)
 		(effects
@@ -2992,6 +3092,46 @@
 			(justify right bottom)
 		)
 		(uuid "867a5962-c807-48e0-9dde-5d9ffea19e21")
+	)
+	(label "MICROSTEP_BIT1"
+		(at 90.17 137.16 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "87d28795-1e78-427d-8756-89d0c02ec406")
+	)
+	(label "STEP"
+		(at 97.79 137.16 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8c2f4b0a-981a-49d0-98a9-5b841d6f9e27")
+	)
+	(label "LI1B"
+		(at 59.69 167.64 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "9c4c84c9-ae84-45ec-983f-98dd7d05f1c3")
+	)
+	(label "LI1A"
+		(at 40.64 167.64 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "9f5bb5af-2178-4400-9c7e-1a42f0dab0fe")
 	)
 	(label "HI1B"
 		(at 260.35 64.77 270)
@@ -3012,6 +3152,56 @@
 			(justify right bottom)
 		)
 		(uuid "b8fa9e0f-0cf7-42f2-b457-6a98eb8b8acd")
+	)
+	(label "SDOA"
+		(at 67.31 167.64 270)
+		(effects
+			(font
+				(size 0.762 0.762)
+			)
+			(justify right bottom)
+		)
+		(uuid "c95b1000-63a5-474a-a44c-e4c734d534c2")
+	)
+	(label "LI2A"
+		(at 48.26 167.64 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "da88b1fd-75e7-448a-8c78-f0b80ff37f37")
+	)
+	(label "HI2A"
+		(at 44.45 167.64 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "ea0f5ca6-16ef-4663-8fc0-0cd9afb0b14b")
+	)
+	(label "SCLKB"
+		(at 82.55 167.64 270)
+		(effects
+			(font
+				(size 0.762 0.762)
+			)
+			(justify right bottom)
+		)
+		(uuid "eab56d69-7f4f-4a24-b6df-5c6544942a8d")
+	)
+	(label "HI1B"
+		(at 63.5 167.64 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "fbd995c2-9de8-44fb-9439-501a4c50ca4f")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -3572,7 +3762,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 40.64 162.56 180)
+		(at 124.46 137.16 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3582,7 +3772,7 @@
 		(dnp no)
 		(uuid "6aa3dfa8-a108-4b62-b5f1-d0b36ec7d077")
 		(property "Reference" "#PWR077"
-			(at 40.64 158.75 0)
+			(at 124.46 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3593,7 +3783,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 36.576 164.846 0)
+			(at 128.524 134.874 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3603,7 +3793,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 40.64 162.56 0)
+			(at 124.46 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3614,7 +3804,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 40.64 162.56 0)
+			(at 124.46 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3625,7 +3815,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 40.64 162.56 0)
+			(at 124.46 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4046,7 +4236,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 44.45 162.56 0)
+		(at 120.65 137.16 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4056,7 +4246,7 @@
 		(dnp no)
 		(uuid "adaa8072-0748-450e-91f7-a9b757d60981")
 		(property "Reference" "#PWR076"
-			(at 44.45 168.91 0)
+			(at 120.65 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4067,7 +4257,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 44.45 166.37 0)
+			(at 120.65 133.35 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4077,7 +4267,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 44.45 162.56 0)
+			(at 120.65 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4088,7 +4278,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 44.45 162.56 0)
+			(at 120.65 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4099,7 +4289,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 44.45 162.56 0)
+			(at 120.65 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4285,7 +4475,7 @@
 	)
 	(symbol
 		(lib_id "Tang Nano 9k:Tang_Nano_9k")
-		(at 130.81 134.62 270)
+		(at 34.29 165.1 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4295,7 +4485,7 @@
 		(dnp no)
 		(uuid "cb4e41f7-6cf8-4ead-8c22-b67657345f64")
 		(property "Reference" "U13"
-			(at 36.83 147.3199 90)
+			(at 128.27 152.4001 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4306,7 +4496,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 130.81 134.62 0)
+			(at 34.29 165.1 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4316,7 +4506,7 @@
 			)
 		)
 		(property "Footprint" "Tang Nano 9k:Tang Nano 9k Header Pins"
-			(at 130.81 134.62 0)
+			(at 34.29 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4327,7 +4517,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 130.81 134.62 0)
+			(at 34.29 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4338,7 +4528,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 130.81 134.62 0)
+			(at 34.29 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5826,23 +6016,23 @@
 			)
 		)
 		(pin "24V" input
-			(at 67.31 101.6 0)
+			(at 31.75 101.6 180)
 			(uuid "73680679-e941-4e56-839f-0ba9319b7102")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(pin "GND" input
-			(at 67.31 106.68 0)
+			(at 31.75 106.68 180)
 			(uuid "ba30235b-9701-4096-89ca-bb81818c0b56")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(instances
