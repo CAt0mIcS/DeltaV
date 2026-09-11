@@ -1,0 +1,62 @@
+IO_LOC  "o_spi_cs_n_current_sensor_b" 35;
+IO_PORT "o_spi_cs_n_current_sensor_b" IO_TYPE=LVCMOS33;
+
+IO_LOC  "o_spi_clk_current_sensor_b" 40;
+IO_PORT "o_spi_clk_current_sensor_b" IO_TYPE=LVCMOS33;
+
+IO_LOC  "o_spi_cs_n_current_sensor_a" 33;
+IO_PORT "o_spi_cs_n_current_sensor_a" IO_TYPE=LVCMOS33;
+
+IO_LOC  "o_spi_clk_current_sensor_a" 30;
+IO_PORT "o_spi_clk_current_sensor_a" IO_TYPE=LVCMOS33;
+
+IO_LOC  "o_mos_right_low_b" 25;
+IO_PORT "o_mos_right_low_b" IO_TYPE=LVCMOS33;
+
+IO_LOC  "o_mos_right_high_b" 26;
+IO_PORT "o_mos_right_high_b" IO_TYPE=LVCMOS33;
+
+IO_LOC  "o_mos_left_low_b" 27;
+IO_PORT "o_mos_left_low_b" IO_TYPE=LVCMOS33;
+
+IO_LOC  "o_mos_left_high_b" 28;
+IO_PORT "o_mos_left_high_b" IO_TYPE=LVCMOS33;
+
+IO_LOC  "o_mos_right_low_a" 39;
+IO_PORT "o_mos_right_low_a" IO_TYPE=LVCMOS33;
+
+IO_LOC  "o_mos_right_high_a" 36;
+IO_PORT "o_mos_right_high_a" IO_TYPE=LVCMOS33;
+
+IO_LOC  "o_mos_left_low_a" 37;
+IO_PORT "o_mos_left_low_a" IO_TYPE=LVCMOS33;
+
+IO_LOC  "o_mos_left_high_a" 38;
+IO_PORT "o_mos_left_high_a" IO_TYPE=LVCMOS33;
+
+IO_LOC  "i_spi_data_current_sensor_b" 34;
+IO_PORT "i_spi_data_current_sensor_b" IO_TYPE=LVCMOS33;
+
+IO_LOC  "i_spi_data_current_sensor_a" 29;
+IO_PORT "i_spi_data_current_sensor_a" IO_TYPE=LVCMOS33;
+
+IO_LOC  "i_microstepping_interval[2]" 74;
+IO_PORT "i_microstepping_interval[2]" IO_TYPE=LVCMOS33;
+
+IO_LOC  "i_microstepping_interval[1]" 73;
+IO_PORT "i_microstepping_interval[1]" IO_TYPE=LVCMOS33;
+
+IO_LOC  "i_microstepping_interval[0]" 72;
+IO_PORT "i_microstepping_interval[0]" IO_TYPE=LVCMOS33;
+
+IO_LOC  "i_dir" 71;
+IO_PORT "i_dir" IO_TYPE=LVCMOS33;
+
+IO_LOC  "i_step" 70;
+IO_PORT "i_step" IO_TYPE=LVCMOS33;
+
+IO_LOC  "clk" 52;
+IO_PORT "clk" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+
+IO_LOC  "rst_n" 3;
+IO_PORT "rst_n" IO_TYPE=LVCMOS18;

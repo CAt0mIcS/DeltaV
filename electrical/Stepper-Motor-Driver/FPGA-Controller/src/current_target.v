@@ -16,7 +16,8 @@ module current_target(
 
 
     initial begin
-        $readmemh(`SINE_MEM_PATH, sine_values);
+        $readmemh("sine.mem", sine_values);
+        // $readmemh(`SINE_MEM_PATH, sine_values);
         current_step = 0;
         o_current_target = 0;
         o_current_increasing = 0;
