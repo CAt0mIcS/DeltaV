@@ -5,6 +5,265 @@
 	(uuid "c25060f1-f2f3-4cbd-b6ee-5f66e19502f5")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Connector:Screw_Terminal_01x03"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Screw_Terminal_01x03"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Generic screw terminal, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "screw terminal"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "TerminalBlock*:*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Screw_Terminal_01x03_1_1"
+				(rectangle
+					(start -1.27 3.81)
+					(end 1.27 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.5334 2.8702) (xy 0.3302 2.032)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.5334 0.3302) (xy 0.3302 -0.508)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.5334 -2.2098) (xy 0.3302 -3.048)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.3556 3.048) (xy 0.508 2.2098)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.3556 0.508) (xy 0.508 -0.3302)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.3556 -2.032) (xy 0.508 -2.8702)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 2.54)
+					(radius 0.635)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 0.635)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 -2.54)
+					(radius 0.635)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector:Screw_Terminal_01x04"
 			(pin_names
 				(offset 1.016)
@@ -602,6 +861,129 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Mechanical:MountingHole_Pad"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "H"
+				(at 0 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole_Pad"
+				(at 0 4.445 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Mounting Hole with connection"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*Pad*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "MountingHole_Pad_0_1"
+				(circle
+					(center 0 1.27)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "MountingHole_Pad_1_1"
+				(pin input line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1969,7 +2351,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "Connect terminal 1 to coil A and back to terminal 2.\nConnect terminal 3 to coil B and back to terminal 4.\n"
+	(text "Connect terminal 1 to coil A and back to terminal 2.\nConnect terminal 4 to coil B and back to terminal 3.\n"
 		(exclude_from_sim no)
 		(at 141.732 86.868 0)
 		(effects
@@ -2006,10 +2388,22 @@
 		(uuid "023dfa00-470c-4ab9-8198-fecc300e4f30")
 	)
 	(junction
+		(at 16.51 21.59)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "16dbcfb0-6a62-4265-8cd4-f6518c2751fc")
+	)
+	(junction
 		(at 31.75 54.61)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "30c539e4-e0fc-449d-b8b2-2f2739d7662c")
+	)
+	(junction
+		(at 63.5 21.59)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4189c6de-07ee-448f-85fe-e872412cba2b")
 	)
 	(junction
 		(at 240.03 54.61)
@@ -2036,6 +2430,12 @@
 		(uuid "bda25742-c464-48db-b779-aa53a6ba3c30")
 	)
 	(junction
+		(at 39.37 21.59)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cc5acaff-8fc9-4b87-b685-f6c3a713b279")
+	)
+	(junction
 		(at 52.07 54.61)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2048,8 +2448,32 @@
 		(uuid "ebd3f8e3-536c-4b4d-8827-856b0b5f90a4")
 	)
 	(no_connect
+		(at 109.22 167.64)
+		(uuid "0bfb10a3-b74b-4a1b-891d-a16667648cc1")
+	)
+	(no_connect
+		(at 93.98 167.64)
+		(uuid "1a3e5247-f499-4c74-aeac-1171c469aa2d")
+	)
+	(no_connect
+		(at 74.93 137.16)
+		(uuid "1ec9838d-baf4-4221-8ba6-11d4f6fae36b")
+	)
+	(no_connect
+		(at 97.79 167.64)
+		(uuid "257bade3-238c-4f9f-a4b7-79e4f1ad36f1")
+	)
+	(no_connect
+		(at 113.03 167.64)
+		(uuid "25ad0558-d6a2-4293-a702-c06a521774ea")
+	)
+	(no_connect
 		(at 63.5 137.16)
 		(uuid "2c7255dc-8d5f-431a-9893-acae016d53ba")
+	)
+	(no_connect
+		(at 105.41 167.64)
+		(uuid "375ae956-5be7-4968-bd37-81eca8cf15f6")
 	)
 	(no_connect
 		(at 59.69 137.16)
@@ -2060,6 +2484,22 @@
 		(uuid "4c689d7d-c8d2-4eeb-9941-536ae00ee1a0")
 	)
 	(no_connect
+		(at 36.83 137.16)
+		(uuid "6243d415-1d90-4e56-834a-118ac7a65f52")
+	)
+	(no_connect
+		(at 101.6 167.64)
+		(uuid "7b3100a0-d75b-4dc9-bcf4-9a0170c02338")
+	)
+	(no_connect
+		(at 71.12 137.16)
+		(uuid "7e1d67ff-fc3f-43c6-92ea-bc6a075d87f5")
+	)
+	(no_connect
+		(at 120.65 167.64)
+		(uuid "868159e0-4fba-48ac-a095-914b24057dde")
+	)
+	(no_connect
 		(at 40.64 137.16)
 		(uuid "92cf45ae-4550-447f-8b8f-9ed2b5d23597")
 	)
@@ -2068,12 +2508,44 @@
 		(uuid "9fe19b0a-20b3-4941-bc4c-11194e439bc3")
 	)
 	(no_connect
+		(at 90.17 167.64)
+		(uuid "a561598d-d632-489e-a1c0-de66f9e11508")
+	)
+	(no_connect
 		(at 101.6 137.16)
 		(uuid "a8f8d672-8486-40f4-ac56-d4ebda62aefa")
 	)
 	(no_connect
+		(at 124.46 167.64)
+		(uuid "af04e06a-2fc2-4e12-b5e8-2835b32d823f")
+	)
+	(no_connect
 		(at 48.26 137.16)
 		(uuid "c1cc6ea2-1e9e-4c71-9d85-fa24e22391c1")
+	)
+	(no_connect
+		(at 78.74 137.16)
+		(uuid "d192905b-f900-4e9a-a910-4931b506d4b7")
+	)
+	(no_connect
+		(at 116.84 137.16)
+		(uuid "e4d5a0eb-0d9e-49be-bba4-0ba94af88e1e")
+	)
+	(no_connect
+		(at 113.03 137.16)
+		(uuid "e67f40e5-fd35-4dd3-b695-75a675132c4a")
+	)
+	(no_connect
+		(at 109.22 137.16)
+		(uuid "e8124a3f-385e-4288-9e98-2c1d28d60979")
+	)
+	(no_connect
+		(at 105.41 137.16)
+		(uuid "ea6a2616-b554-4521-9a5f-33152980a90d")
+	)
+	(no_connect
+		(at 116.84 167.64)
+		(uuid "eb45e16a-e115-46b1-858e-5a005311a2d0")
 	)
 	(no_connect
 		(at 52.07 137.16)
@@ -2082,16 +2554,6 @@
 	(no_connect
 		(at 55.88 137.16)
 		(uuid "fe26bbc3-340a-496b-911a-c162263b92d9")
-	)
-	(wire
-		(pts
-			(xy 181.61 81.28) (xy 181.61 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "190d17b5-06e8-4c68-b4e7-0fb434632426")
 	)
 	(wire
 		(pts
@@ -2122,6 +2584,16 @@
 			(type default)
 		)
 		(uuid "1dfc5b64-badb-4865-9061-65e4ff206091")
+	)
+	(wire
+		(pts
+			(xy 27.94 107.95) (xy 27.94 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "225fc6dc-5604-4c92-b749-29da4d0fc967")
 	)
 	(wire
 		(pts
@@ -2255,6 +2727,26 @@
 	)
 	(wire
 		(pts
+			(xy 39.37 21.59) (xy 63.5 21.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4490d628-cbff-4bff-8513-8313819c1a85")
+	)
+	(wire
+		(pts
+			(xy 34.29 109.22) (xy 27.94 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46e49d13-0f21-42c0-8a8d-20aaf5116b0b")
+	)
+	(wire
+		(pts
 			(xy 74.93 45.72) (xy 74.93 39.37)
 		)
 		(stroke
@@ -2325,6 +2817,16 @@
 	)
 	(wire
 		(pts
+			(xy 146.05 81.28) (xy 179.07 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ebea5c2-60be-47b4-8c4b-665ff74bea57")
+	)
+	(wire
+		(pts
 			(xy 219.71 54.61) (xy 219.71 55.88)
 		)
 		(stroke
@@ -2352,16 +2854,6 @@
 			(type default)
 		)
 		(uuid "66e8f7b2-79a8-4b28-ae51-d4767425e0f7")
-	)
-	(wire
-		(pts
-			(xy 179.07 59.69) (xy 179.07 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6856e9b8-9ed1-4e0f-a9b2-45c391c87728")
 	)
 	(wire
 		(pts
@@ -2395,7 +2887,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 83.82) (xy 143.51 83.82)
+			(xy 143.51 83.82) (xy 181.61 83.82)
 		)
 		(stroke
 			(width 0)
@@ -2445,6 +2937,16 @@
 	)
 	(wire
 		(pts
+			(xy 63.5 21.59) (xy 87.63 21.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e630635-0a83-46b2-908d-a7e5e4648d03")
+	)
+	(wire
+		(pts
 			(xy 212.09 39.37) (xy 209.55 39.37)
 		)
 		(stroke
@@ -2462,6 +2964,26 @@
 			(type default)
 		)
 		(uuid "87d93a10-8ad4-4836-aa74-ac79ebba0ed9")
+	)
+	(wire
+		(pts
+			(xy 27.94 102.87) (xy 27.94 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89944fd0-8b7f-4462-b50a-917e36a73b61")
+	)
+	(wire
+		(pts
+			(xy 27.94 101.6) (xy 34.29 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8bf3d589-a5aa-4c10-b82f-1187dcd2f5f8")
 	)
 	(wire
 		(pts
@@ -2512,16 +3034,6 @@
 			(type default)
 		)
 		(uuid "918717a2-b031-45e5-8d0c-b1eeab292d98")
-	)
-	(wire
-		(pts
-			(xy 146.05 81.28) (xy 181.61 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "934069f1-0829-4d4a-b46c-c5215047bc1f")
 	)
 	(wire
 		(pts
@@ -2615,6 +3127,16 @@
 	)
 	(wire
 		(pts
+			(xy 179.07 59.69) (xy 179.07 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6d2fdf1-327c-41d1-a9cb-ebaf370f7424")
+	)
+	(wire
+		(pts
 			(xy 219.71 36.83) (xy 209.55 36.83)
 		)
 		(stroke
@@ -2675,6 +3197,16 @@
 	)
 	(wire
 		(pts
+			(xy 181.61 83.82) (xy 181.61 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b920ed22-9aa7-44e6-94ac-9d7f18905e98")
+	)
+	(wire
+		(pts
 			(xy 260.35 54.61) (xy 260.35 55.88)
 		)
 		(stroke
@@ -2692,6 +3224,16 @@
 			(type default)
 		)
 		(uuid "c2e8fbf7-6d5c-443a-8ce1-b56565662406")
+	)
+	(wire
+		(pts
+			(xy 16.51 21.59) (xy 39.37 21.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c3cd0557-4ae5-4eef-b34c-a80648dc85c1")
 	)
 	(wire
 		(pts
@@ -2752,6 +3294,16 @@
 			(type default)
 		)
 		(uuid "d2feb9d7-7768-4bd8-98df-7468fcf281fe")
+	)
+	(wire
+		(pts
+			(xy 27.94 105.41) (xy 34.29 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d4511ce4-d31f-4778-a4f5-7b04096dc0cc")
 	)
 	(wire
 		(pts
@@ -3203,6 +3755,76 @@
 		)
 		(uuid "fbd995c2-9de8-44fb-9439-501a4c50ca4f")
 	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 179.07 74.93 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0c9da041-4d7a-4847-b7dc-3ecf60045cad")
+		(property "Netclass" "VMotor"
+			(at 176.53 74.2315 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at -114.3 20.32 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 105.41 77.47 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b7be7e36-ffdd-47c3-86fb-2a5cbbec2d93")
+		(property "Netclass" "VMotor"
+			(at 107.95 76.7715 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at -187.96 22.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
 	(symbol
 		(lib_id "power:GND")
 		(at 191.77 54.61 270)
@@ -3215,7 +3837,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "08f1f3fa-d141-4bff-b58d-4a10a9a63afa")
-		(property "Reference" "#PWR016"
+		(property "Reference" "#PWR08"
 			(at 185.42 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -3276,7 +3898,7 @@
 		(instances
 			(project "Stepper Motor Driver"
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5"
-					(reference "#PWR016")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -3293,7 +3915,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "19b6f45b-d76b-4fdf-b1ab-f48b42511cae")
-		(property "Reference" "C22"
+		(property "Reference" "C8"
 			(at 255.27 48.768 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3355,7 +3977,7 @@
 		(instances
 			(project "Stepper Motor Driver"
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5"
-					(reference "C22")
+					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -3373,7 +3995,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1dfe0bd3-8cda-4977-92cd-dfca4497fe0a")
-		(property "Reference" "#PWR018"
+		(property "Reference" "#PWR010"
 			(at 224.79 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -3434,7 +4056,7 @@
 		(instances
 			(project "Stepper Motor Driver"
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5"
-					(reference "#PWR018")
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -3452,7 +4074,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "26034a79-f5a9-4b45-8335-d2d3bfd3557f")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR05"
 			(at 77.47 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -3513,7 +4135,86 @@
 		(instances
 			(project "Stepper Motor Driver"
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5"
-					(reference "#PWR015")
+					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 39.37 19.05 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2bef8c74-7106-43a2-82df-2630bb749b01")
+		(property "Reference" "H2"
+			(at 41.91 16.5099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 41.91 19.0499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad"
+			(at 39.37 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 39.37 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 39.37 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fcbedb76-1eb9-42b3-9307-c4f3a75f962e")
+		)
+		(instances
+			(project "Stepper Motor Driver"
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5"
+					(reference "H2")
 					(unit 1)
 				)
 			)
@@ -3612,7 +4313,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "36e6cdb5-3927-4fe4-bb2f-c8cd55acf8d5")
-		(property "Reference" "#PWR019"
+		(property "Reference" "#PWR011"
 			(at 245.11 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -3673,7 +4374,85 @@
 		(instances
 			(project "Stepper Motor Driver"
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5"
-					(reference "#PWR019")
+					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 16.51 21.59 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "47250758-c40f-4adb-abf9-efd96e2ba7f5")
+		(property "Reference" "#PWR01"
+			(at 16.51 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 16.51 26.67 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 16.51 21.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 16.51 21.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 16.51 21.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e4ac3d29-46bc-4c67-88bf-2f32df9a3414")
+		)
+		(instances
+			(project "Stepper Motor Driver"
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5"
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -3771,7 +4550,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6aa3dfa8-a108-4b62-b5f1-d0b36ec7d077")
-		(property "Reference" "#PWR077"
+		(property "Reference" "#PWR07"
 			(at 124.46 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -3831,7 +4610,7 @@
 		(instances
 			(project "Stepper Motor Driver"
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5"
-					(reference "#PWR077")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -3848,7 +4627,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6b887089-5a59-4b86-a0e6-5ce4e12e96c4")
-		(property "Reference" "C18"
+		(property "Reference" "C4"
 			(at 87.63 48.768 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3910,7 +4689,7 @@
 		(instances
 			(project "Stepper Motor Driver"
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5"
-					(reference "C18")
+					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -3927,7 +4706,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7c9e9aa5-d1ea-4e08-993b-e24cbdf4a424")
-		(property "Reference" "C16"
+		(property "Reference" "C2"
 			(at 46.99 48.768 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3989,7 +4768,7 @@
 		(instances
 			(project "Stepper Motor Driver"
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5"
-					(reference "C16")
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -4006,7 +4785,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "84cf20fb-2264-4c1f-82ae-387425d24c95")
-		(property "Reference" "C21"
+		(property "Reference" "C7"
 			(at 234.95 48.768 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4068,7 +4847,7 @@
 		(instances
 			(project "Stepper Motor Driver"
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5"
-					(reference "C21")
+					(reference "C7")
 					(unit 1)
 				)
 			)
@@ -4085,7 +4864,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "949e05a5-e4c4-4eed-8e6c-3c0728609dd7")
-		(property "Reference" "C19"
+		(property "Reference" "C5"
 			(at 195.58 48.768 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4147,7 +4926,7 @@
 		(instances
 			(project "Stepper Motor Driver"
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5"
-					(reference "C19")
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -4235,6 +5014,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 63.5 19.05 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a5112c5a-83f8-4911-8b89-5232afe9136f")
+		(property "Reference" "H3"
+			(at 66.04 16.5099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 66.04 19.0499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad"
+			(at 63.5 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 63.5 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 63.5 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "49ff0943-b060-49b5-9bc3-3cbde8bc5dc3")
+		)
+		(instances
+			(project "Stepper Motor Driver"
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5"
+					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 120.65 137.16 180)
 		(unit 1)
@@ -4245,7 +5103,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "adaa8072-0748-450e-91f7-a9b757d60981")
-		(property "Reference" "#PWR076"
+		(property "Reference" "#PWR06"
 			(at 120.65 130.81 0)
 			(hide yes)
 			(show_name no)
@@ -4305,7 +5163,7 @@
 		(instances
 			(project "Stepper Motor Driver"
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5"
-					(reference "#PWR076")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -4484,7 +5342,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "cb4e41f7-6cf8-4ead-8c22-b67657345f64")
-		(property "Reference" "U13"
+		(property "Reference" "U1"
 			(at 128.27 152.4001 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4685,7 +5543,7 @@
 		(instances
 			(project "Stepper Motor Driver"
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5"
-					(reference "U13")
+					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -4703,7 +5561,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cc123eb6-5f58-4725-82fe-4da6f93d41b9")
-		(property "Reference" "#PWR011"
+		(property "Reference" "#PWR03"
 			(at 36.83 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -4764,7 +5622,7 @@
 		(instances
 			(project "Stepper Motor Driver"
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5"
-					(reference "#PWR011")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -4863,7 +5721,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d6aa25e7-a2f1-4a0b-85c1-1aa32ceebec5")
-		(property "Reference" "#PWR017"
+		(property "Reference" "#PWR09"
 			(at 205.74 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -4924,7 +5782,90 @@
 		(instances
 			(project "Stepper Motor Driver"
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5"
-					(reference "#PWR017")
+					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Screw_Terminal_01x03")
+		(at 22.86 105.41 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "da23267c-1cce-4a6c-b3a3-c6ea00efd882")
+		(property "Reference" "J1"
+			(at 22.86 96.52 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Screw_Terminal_01x03"
+			(at 22.86 99.06 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_Type011_RT05503HBLC_1x03_P5.00mm_Horizontal"
+			(at 22.86 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 22.86 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic screw terminal, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 22.86 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0348a961-b17d-44cc-89ee-1a7605c623fa")
+		)
+		(pin "2"
+			(uuid "c7cf2e0b-b243-479e-8160-e56285bf8266")
+		)
+		(pin "3"
+			(uuid "1c3e4643-bc50-4107-8bbb-9a02fa18a0bc")
+		)
+		(instances
+			(project "Stepper Motor Driver"
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5"
+					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -5012,6 +5953,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 16.51 19.05 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e5dba3b8-fa4e-465d-97dd-70b327c1cd4d")
+		(property "Reference" "H1"
+			(at 19.05 16.5099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 19.05 19.0499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad"
+			(at 16.51 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 16.51 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 16.51 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ce10f092-e2d6-496e-95ba-ccb8928fde67")
+		)
+		(instances
+			(project "Stepper Motor Driver"
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5"
+					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Screw_Terminal_01x04")
 		(at 140.97 76.2 90)
 		(unit 1)
@@ -5023,7 +6043,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e6a715da-5ea6-45a1-802d-611af7d625f7")
-		(property "Reference" "J3"
+		(property "Reference" "J2"
 			(at 142.24 69.85 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5043,7 +6063,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_Type011_RT05504HBLC_1x04_P5.00mm_Horizontal"
 			(at 140.97 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -5091,7 +6111,7 @@
 		(instances
 			(project "Stepper Motor Driver"
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5"
-					(reference "J3")
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -5109,7 +6129,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e70818ac-30cb-49a0-ac43-efa416d2d7c8")
-		(property "Reference" "#PWR09"
+		(property "Reference" "#PWR02"
 			(at 16.51 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -5170,7 +6190,7 @@
 		(instances
 			(project "Stepper Motor Driver"
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5"
-					(reference "#PWR09")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -5188,7 +6208,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "eb446bfd-a032-4075-92f5-62c9ca476737")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR04"
 			(at 57.15 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -5249,7 +6269,7 @@
 		(instances
 			(project "Stepper Motor Driver"
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5"
-					(reference "#PWR012")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -5266,7 +6286,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ecd443e6-f231-443d-8806-fbd794abb171")
-		(property "Reference" "C17"
+		(property "Reference" "C3"
 			(at 67.31 48.768 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5328,7 +6348,7 @@
 		(instances
 			(project "Stepper Motor Driver"
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5"
-					(reference "C17")
+					(reference "C3")
 					(unit 1)
 				)
 			)
@@ -5345,7 +6365,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f0f65f79-0cae-4c27-95a4-a56e1f9da337")
-		(property "Reference" "C15"
+		(property "Reference" "C1"
 			(at 26.67 48.768 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5407,7 +6427,7 @@
 		(instances
 			(project "Stepper Motor Driver"
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5"
-					(reference "C15")
+					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -5495,6 +6515,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 87.63 19.05 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f98b9d4a-4051-48e0-b394-c11e5eda9c06")
+		(property "Reference" "H4"
+			(at 90.17 16.5099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 90.17 19.0499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad"
+			(at 87.63 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 87.63 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 87.63 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bda08488-bab5-40de-a449-d6cfb8bed884")
+		)
+		(instances
+			(project "Stepper Motor Driver"
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5"
+					(reference "H4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 214.63 54.61 90)
 		(unit 1)
@@ -5505,7 +6604,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "fb248641-2e99-4198-86ff-4a842272d661")
-		(property "Reference" "C20"
+		(property "Reference" "C6"
 			(at 214.63 48.768 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5567,7 +6666,7 @@
 		(instances
 			(project "Stepper Motor Driver"
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5"
-					(reference "C20")
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -5978,7 +7077,7 @@
 		)
 	)
 	(sheet
-		(at 31.75 97.79)
+		(at 34.29 99.06)
 		(size 35.56 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5994,7 +7093,7 @@
 		)
 		(uuid "f7f2b416-62ce-45ff-b1ee-d2ad4c22e608")
 		(property "Sheetname" "Power"
-			(at 31.75 97.0784 0)
+			(at 34.29 98.3484 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6005,7 +7104,7 @@
 			)
 		)
 		(property "Sheetfile" "Power.kicad_sch"
-			(at 31.75 111.0746 0)
+			(at 34.29 112.3446 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6015,8 +7114,8 @@
 				(justify left top)
 			)
 		)
-		(pin "24V" input
-			(at 31.75 101.6 180)
+		(pin "+VMotor" input
+			(at 34.29 101.6 180)
 			(uuid "73680679-e941-4e56-839f-0ba9319b7102")
 			(effects
 				(font
@@ -6026,8 +7125,18 @@
 			)
 		)
 		(pin "GND" input
-			(at 31.75 106.68 180)
+			(at 34.29 105.41 180)
 			(uuid "ba30235b-9701-4096-89ca-bb81818c0b56")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "+12VIn" input
+			(at 34.29 109.22 180)
+			(uuid "1ad69f60-89dd-4d7f-93c7-7a3261b11c6c")
 			(effects
 				(font
 					(size 1.27 1.27)

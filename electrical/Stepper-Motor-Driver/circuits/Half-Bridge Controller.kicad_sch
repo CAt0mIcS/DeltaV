@@ -1704,145 +1704,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+24V"
-			(power global)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "+24V"
-				(at 0 3.556 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+24V\""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "+24V_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+24V_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:GND"
 			(power global)
 			(pin_numbers
@@ -2553,6 +2414,52 @@
 		)
 		(uuid "5d893f08-c097-4af3-882e-4542a98caa46")
 	)
+	(hierarchical_label "+VMotorIn"
+		(shape input)
+		(at 139.7 36.83 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "73d4c4b6-a772-44d2-8ba9-af2cf3330f2c")
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 119.38 54.61 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a08366db-fcb2-4059-8a54-df0eab52705f")
+		(property "Netclass" "VMotor"
+			(at 120.0785 57.15 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at -173.99 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
 	(symbol
 		(lib_id "Diode:BAT43")
 		(at 115.57 39.37 0)
@@ -2564,7 +2471,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0e03d740-2861-4b12-9698-6e0329c6c83c")
-		(property "Reference" "D14"
+		(property "Reference" "D3"
 			(at 115.57 34.036 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2670,19 +2577,19 @@
 		(instances
 			(project "Stepper Motor Driver"
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
-					(reference "D22")
+					(reference "D12")
 					(unit 1)
 				)
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
-					(reference "D24")
+					(reference "D9")
 					(unit 1)
 				)
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
-					(reference "D16")
+					(reference "D6")
 					(unit 1)
 				)
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
-					(reference "D14")
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -2699,7 +2606,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "14081b6f-81f9-41ba-b757-7817e980a775")
-		(property "Reference" "R27"
+		(property "Reference" "R13"
 			(at 107.95 36.83 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2761,19 +2668,19 @@
 		(instances
 			(project "Stepper Motor Driver"
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
-					(reference "R45")
-					(unit 1)
-				)
-				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
-					(reference "R53")
-					(unit 1)
-				)
-				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
 					(reference "R37")
 					(unit 1)
 				)
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
+					(reference "R29")
+					(unit 1)
+				)
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
+					(reference "R21")
+					(unit 1)
+				)
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
-					(reference "R27")
+					(reference "R13")
 					(unit 1)
 				)
 			)
@@ -2790,7 +2697,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1c0103cd-0c57-4b8e-9b21-cb532028b2b8")
-		(property "Reference" "R22"
+		(property "Reference" "R12"
 			(at 104.14 74.422 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2852,19 +2759,19 @@
 		(instances
 			(project "Stepper Motor Driver"
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
-					(reference "R44")
-					(unit 1)
-				)
-				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
-					(reference "R52")
-					(unit 1)
-				)
-				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
 					(reference "R36")
 					(unit 1)
 				)
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
+					(reference "R28")
+					(unit 1)
+				)
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
+					(reference "R20")
+					(unit 1)
+				)
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
-					(reference "R22")
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -2882,7 +2789,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "22455d5e-4d00-45ea-a987-463a824f2002")
-		(property "Reference" "#FLG02"
+		(property "Reference" "#FLG01"
 			(at 53.34 36.195 0)
 			(hide yes)
 			(show_name no)
@@ -2946,7 +2853,7 @@
 					(unit 1)
 				)
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
-					(reference "#FLG06")
+					(reference "#FLG05")
 					(unit 1)
 				)
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
@@ -2954,7 +2861,7 @@
 					(unit 1)
 				)
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
-					(reference "#FLG02")
+					(reference "#FLG01")
 					(unit 1)
 				)
 			)
@@ -2971,7 +2878,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2ead2170-304a-409a-9770-2cba95193b16")
-		(property "Reference" "D13"
+		(property "Reference" "D2"
 			(at 107.95 58.166 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3077,19 +2984,19 @@
 		(instances
 			(project "Stepper Motor Driver"
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
-					(reference "D21")
+					(reference "D11")
 					(unit 1)
 				)
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
-					(reference "D23")
+					(reference "D8")
 					(unit 1)
 				)
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
-					(reference "D15")
+					(reference "D5")
 					(unit 1)
 				)
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
-					(reference "D13")
+					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -3107,7 +3014,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "30d976d7-cad9-4763-83ce-95955951def9")
-		(property "Reference" "#PWR022"
+		(property "Reference" "#PWR013"
 			(at 40.64 41.91 0)
 			(hide yes)
 			(show_name no)
@@ -3167,19 +3074,19 @@
 		(instances
 			(project "Stepper Motor Driver"
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
-					(reference "#PWR038")
+					(reference "#PWR031")
 					(unit 1)
 				)
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
-					(reference "#PWR035")
+					(reference "#PWR025")
 					(unit 1)
 				)
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
-					(reference "#PWR032")
+					(reference "#PWR019")
 					(unit 1)
 				)
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
-					(reference "#PWR022")
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -3196,7 +3103,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "342cdcb2-1df1-448b-b826-94032ac87052")
-		(property "Reference" "U1"
+		(property "Reference" "U2"
 			(at 71.12 34.544 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3278,11 +3185,11 @@
 		(instances
 			(project "Stepper Motor Driver"
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
-					(reference "U4")
+					(reference "U5")
 					(unit 1)
 				)
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
-					(reference "U8")
+					(reference "U4")
 					(unit 1)
 				)
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
@@ -3290,7 +3197,7 @@
 					(unit 1)
 				)
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
-					(reference "U1")
+					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -3308,7 +3215,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3767da5a-eed0-4c24-84d5-18723dfd8cfd")
-		(property "Reference" "TP1"
+		(property "Reference" "TP2"
 			(at 125.73 39.8779 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3369,19 +3276,19 @@
 		(instances
 			(project "Stepper Motor Driver"
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
-					(reference "TP4")
+					(reference "TP14")
 					(unit 1)
 				)
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
-					(reference "TP3")
+					(reference "TP10")
 					(unit 1)
 				)
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
-					(reference "TP2")
+					(reference "TP6")
 					(unit 1)
 				)
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
-					(reference "TP1")
+					(reference "TP2")
 					(unit 1)
 				)
 			)
@@ -3398,7 +3305,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3d031302-4940-4c94-91d5-d5f4f5b7a80f")
-		(property "Reference" "R29"
+		(property "Reference" "R11"
 			(at 100.33 60.96 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3460,19 +3367,19 @@
 		(instances
 			(project "Stepper Motor Driver"
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
-					(reference "R43")
-					(unit 1)
-				)
-				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
-					(reference "R51")
-					(unit 1)
-				)
-				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
 					(reference "R35")
 					(unit 1)
 				)
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
+					(reference "R27")
+					(unit 1)
+				)
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
+					(reference "R19")
+					(unit 1)
+				)
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
-					(reference "R29")
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -3490,7 +3397,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5aefc641-f1f2-40bd-92a0-82cf84a4219b")
-		(property "Reference" "Q3"
+		(property "Reference" "Q1"
 			(at 143.51 40.6399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3735,19 +3642,109 @@
 		(instances
 			(project "Stepper Motor Driver"
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
-					(reference "Q11")
+					(reference "Q7")
 					(unit 1)
 				)
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
-					(reference "Q13")
+					(reference "Q5")
 					(unit 1)
 				)
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
-					(reference "Q9")
+					(reference "Q3")
 					(unit 1)
 				)
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
-					(reference "Q3")
+					(reference "Q1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 139.7 72.39 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5d9e6ad2-bfce-46a3-a8f5-965e859faf28")
+		(property "Reference" "#PWR079"
+			(at 139.7 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 139.7 77.47 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 139.7 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 139.7 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 139.7 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "00ab6c78-61ec-43b7-aa5d-80d61df2aeeb")
+		)
+		(instances
+			(project "Stepper Motor Driver"
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
+					(reference "#PWR085")
+					(unit 1)
+				)
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
+					(reference "#PWR083")
+					(unit 1)
+				)
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
+					(reference "#PWR081")
+					(unit 1)
+				)
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
+					(reference "#PWR079")
 					(unit 1)
 				)
 			)
@@ -3765,7 +3762,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "674da2e3-94da-47ed-92ff-2398f863557e")
-		(property "Reference" "#PWR028"
+		(property "Reference" "#PWR015"
 			(at 111.76 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -3825,19 +3822,19 @@
 		(instances
 			(project "Stepper Motor Driver"
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
-					(reference "#PWR036")
-					(unit 1)
-				)
-				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
-					(reference "#PWR040")
-					(unit 1)
-				)
-				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
 					(reference "#PWR033")
 					(unit 1)
 				)
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
+					(reference "#PWR027")
+					(unit 1)
+				)
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
+					(reference "#PWR021")
+					(unit 1)
+				)
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
-					(reference "#PWR028")
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -3855,7 +3852,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "71d06b55-cfb4-4e56-af08-d775bd92d734")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR014"
 			(at 53.34 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -3915,19 +3912,19 @@
 		(instances
 			(project "Stepper Motor Driver"
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
-					(reference "#PWR014")
+					(reference "#PWR032")
 					(unit 1)
 				)
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
-					(reference "#PWR039")
+					(reference "#PWR026")
 					(unit 1)
 				)
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
-					(reference "#PWR013")
+					(reference "#PWR020")
 					(unit 1)
 				)
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
-					(reference "#PWR010")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -3944,7 +3941,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "77dd43f9-1cf3-4105-9fc9-1af075f8d166")
-		(property "Reference" "C8"
+		(property "Reference" "C9"
 			(at 37.846 30.48 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4006,7 +4003,7 @@
 		(instances
 			(project "Stepper Motor Driver"
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
-					(reference "C11")
+					(reference "C15")
 					(unit 1)
 				)
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
@@ -4014,11 +4011,11 @@
 					(unit 1)
 				)
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
-					(reference "C9")
+					(reference "C11")
 					(unit 1)
 				)
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
-					(reference "C8")
+					(reference "C9")
 					(unit 1)
 				)
 			)
@@ -4035,7 +4032,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "79d62a63-7dcf-4fa7-8a79-b4daeac18310")
-		(property "Reference" "R23"
+		(property "Reference" "R16"
 			(at 114.554 48.514 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4099,109 +4096,19 @@
 		(instances
 			(project "Stepper Motor Driver"
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
-					(reference "R48")
-					(unit 1)
-				)
-				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
-					(reference "R56")
-					(unit 1)
-				)
-				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
 					(reference "R40")
 					(unit 1)
 				)
-				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
-					(reference "R23")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 139.7 72.39 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7f2e6a65-c93b-4d7d-a37d-ffa7f6c5a758")
-		(property "Reference" "#PWR04"
-			(at 139.7 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 139.7 77.47 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 139.7 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 139.7 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 139.7 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a29433c3-83a5-4f90-af4e-897dd2abb91c")
-		)
-		(instances
-			(project "Stepper Motor Driver"
-				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
-					(reference "#PWR08")
-					(unit 1)
-				)
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
-					(reference "#PWR042")
+					(reference "R32")
 					(unit 1)
 				)
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
-					(reference "#PWR06")
+					(reference "R24")
 					(unit 1)
 				)
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
-					(reference "#PWR04")
+					(reference "R16")
 					(unit 1)
 				)
 			)
@@ -4219,7 +4126,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "80f83a69-8f98-4f4b-a1c8-6737ebd6878b")
-		(property "Reference" "TP9"
+		(property "Reference" "TP4"
 			(at 125.73 65.2779 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4280,19 +4187,19 @@
 		(instances
 			(project "Stepper Motor Driver"
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
-					(reference "TP12")
+					(reference "TP16")
 					(unit 1)
 				)
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
-					(reference "TP11")
+					(reference "TP12")
 					(unit 1)
 				)
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
-					(reference "TP10")
+					(reference "TP8")
 					(unit 1)
 				)
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
-					(reference "TP9")
+					(reference "TP4")
 					(unit 1)
 				)
 			)
@@ -4309,7 +4216,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "862e1752-8e34-483c-864b-3e487adbda3e")
-		(property "Reference" "R19"
+		(property "Reference" "R14"
 			(at 111.76 46.99 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4371,19 +4278,19 @@
 		(instances
 			(project "Stepper Motor Driver"
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
-					(reference "R46")
-					(unit 1)
-				)
-				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
-					(reference "R54")
-					(unit 1)
-				)
-				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
 					(reference "R38")
 					(unit 1)
 				)
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
+					(reference "R30")
+					(unit 1)
+				)
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
+					(reference "R22")
+					(unit 1)
+				)
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
-					(reference "R19")
+					(reference "R14")
 					(unit 1)
 				)
 			)
@@ -4401,7 +4308,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "923c9763-e670-4dd6-812a-50dca1c43942")
-		(property "Reference" "#PWR021"
+		(property "Reference" "#PWR012"
 			(at 26.67 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -4462,19 +4369,19 @@
 		(instances
 			(project "Stepper Motor Driver"
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
-					(reference "#PWR034")
+					(reference "#PWR030")
 					(unit 1)
 				)
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
-					(reference "#PWR037")
+					(reference "#PWR024")
 					(unit 1)
 				)
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
-					(reference "#PWR031")
+					(reference "#PWR018")
 					(unit 1)
 				)
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
-					(reference "#PWR021")
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -4492,7 +4399,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "96ce0ed1-0c66-4d3c-bd3f-883eb77bbb20")
-		(property "Reference" "TP5"
+		(property "Reference" "TP3"
 			(at 125.73 50.0379 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4553,19 +4460,19 @@
 		(instances
 			(project "Stepper Motor Driver"
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
-					(reference "TP8")
+					(reference "TP15")
 					(unit 1)
 				)
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
-					(reference "TP7")
+					(reference "TP11")
 					(unit 1)
 				)
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
-					(reference "TP6")
+					(reference "TP7")
 					(unit 1)
 				)
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
-					(reference "TP5")
+					(reference "TP3")
 					(unit 1)
 				)
 			)
@@ -4583,7 +4490,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a51c94ae-d1d9-4195-ae17-c12180f5def0")
-		(property "Reference" "D6"
+		(property "Reference" "D1"
 			(at 77.7875 24.13 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4689,19 +4596,19 @@
 		(instances
 			(project "Stepper Motor Driver"
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
-					(reference "D8")
+					(reference "D10")
 					(unit 1)
 				)
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
-					(reference "D9")
-					(unit 1)
-				)
-				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
 					(reference "D7")
 					(unit 1)
 				)
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
+					(reference "D4")
+					(unit 1)
+				)
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
-					(reference "D6")
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -4718,7 +4625,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b7f9bd9b-ea3f-4306-8595-135ef697196c")
-		(property "Reference" "R13"
+		(property "Reference" "R9"
 			(at 41.91 40.64 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4782,19 +4689,19 @@
 		(instances
 			(project "Stepper Motor Driver"
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
-					(reference "R41")
+					(reference "R33")
 					(unit 1)
 				)
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
-					(reference "R49")
+					(reference "R25")
 					(unit 1)
 				)
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
-					(reference "R28")
+					(reference "R17")
 					(unit 1)
 				)
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
-					(reference "R13")
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -4812,7 +4719,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ba995986-1eaf-481b-bdd4-b6d2920e929e")
-		(property "Reference" "Q4"
+		(property "Reference" "Q2"
 			(at 143.51 66.0399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5057,19 +4964,19 @@
 		(instances
 			(project "Stepper Motor Driver"
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
-					(reference "Q12")
+					(reference "Q8")
 					(unit 1)
 				)
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
-					(reference "Q14")
+					(reference "Q6")
 					(unit 1)
 				)
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
-					(reference "Q10")
+					(reference "Q4")
 					(unit 1)
 				)
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
-					(reference "Q4")
+					(reference "Q2")
 					(unit 1)
 				)
 			)
@@ -5087,7 +4994,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c4c03e82-3ec4-47ea-be1f-54f569a8f04d")
-		(property "Reference" "R16"
+		(property "Reference" "R10"
 			(at 69.85 24.13 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5149,19 +5056,19 @@
 		(instances
 			(project "Stepper Motor Driver"
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
-					(reference "R42")
+					(reference "R34")
 					(unit 1)
 				)
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
-					(reference "R50")
+					(reference "R26")
 					(unit 1)
 				)
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
-					(reference "R32")
+					(reference "R18")
 					(unit 1)
 				)
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
-					(reference "R16")
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -5178,7 +5085,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c7eaa4d1-522b-4cee-ada3-8f8e276b8171")
-		(property "Reference" "C5"
+		(property "Reference" "C10"
 			(at 91.186 42.926 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5242,7 +5149,7 @@
 		(instances
 			(project "Stepper Motor Driver"
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
-					(reference "C12")
+					(reference "C16")
 					(unit 1)
 				)
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
@@ -5250,101 +5157,11 @@
 					(unit 1)
 				)
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
+					(reference "C12")
+					(unit 1)
+				)
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
 					(reference "C10")
-					(unit 1)
-				)
-				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
-					(reference "C5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+24V")
-		(at 139.7 36.83 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c800cfe8-d317-4983-bb47-ccd984fe4b73")
-		(property "Reference" "#PWR02"
-			(at 139.7 40.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+24V"
-			(at 139.7 31.75 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 139.7 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 139.7 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+24V\""
-			(at 139.7 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "7ccdd0f7-56b4-446d-b81e-4ab9078f4237")
-		)
-		(instances
-			(project "Stepper Motor Driver"
-				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
-					(reference "#PWR07")
-					(unit 1)
-				)
-				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
-					(reference "#PWR041")
-					(unit 1)
-				)
-				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
-					(reference "#PWR05")
-					(unit 1)
-				)
-				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
-					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -5361,7 +5178,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "df28ed2c-faaa-4765-9357-6e113816197a")
-		(property "Reference" "R21"
+		(property "Reference" "R15"
 			(at 113.284 72.39 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5425,19 +5242,19 @@
 		(instances
 			(project "Stepper Motor Driver"
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
-					(reference "R47")
-					(unit 1)
-				)
-				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
-					(reference "R55")
-					(unit 1)
-				)
-				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
 					(reference "R39")
 					(unit 1)
 				)
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
+					(reference "R31")
+					(unit 1)
+				)
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
+					(reference "R23")
+					(unit 1)
+				)
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
-					(reference "R21")
+					(reference "R15")
 					(unit 1)
 				)
 			)
@@ -5455,7 +5272,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f1a95174-f9e7-4367-80dd-db129d1a1e3b")
-		(property "Reference" "TP13"
+		(property "Reference" "TP1"
 			(at 102.87 25.9079 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5516,19 +5333,19 @@
 		(instances
 			(project "Stepper Motor Driver"
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
-					(reference "TP16")
+					(reference "TP13")
 					(unit 1)
 				)
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
-					(reference "TP15")
+					(reference "TP9")
 					(unit 1)
 				)
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
-					(reference "TP14")
+					(reference "TP5")
 					(unit 1)
 				)
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
-					(reference "TP13")
+					(reference "TP1")
 					(unit 1)
 				)
 			)
@@ -5546,7 +5363,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fe078bb9-2b19-4e36-b54c-8e6e21efd179")
-		(property "Reference" "#FLG08"
+		(property "Reference" "#FLG02"
 			(at 88.9 36.195 0)
 			(hide yes)
 			(show_name no)
@@ -5606,19 +5423,19 @@
 		(instances
 			(project "Stepper Motor Driver"
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
-					(reference "#FLG012")
+					(reference "#FLG08")
 					(unit 1)
 				)
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/63255003-cc9f-4484-b629-2cece1d23375/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
-					(reference "#FLG011")
+					(reference "#FLG06")
 					(unit 1)
 				)
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/9cd0d410-4d7d-49da-9ea7-76eaacb4e3a3"
-					(reference "#FLG010")
+					(reference "#FLG04")
 					(unit 1)
 				)
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/e3c4045c-a645-4800-ba9b-f8f886693405/dd02b200-5ad3-40be-b13e-7d42becbd6d6"
-					(reference "#FLG08")
+					(reference "#FLG02")
 					(unit 1)
 				)
 			)
