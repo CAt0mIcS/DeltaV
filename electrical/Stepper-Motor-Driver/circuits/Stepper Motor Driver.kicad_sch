@@ -2448,8 +2448,28 @@
 		(uuid "ebd3f8e3-536c-4b4d-8827-856b0b5f90a4")
 	)
 	(no_connect
+		(at 97.79 167.64)
+		(uuid "16893448-3ead-482c-b4d4-aac3f3b97743")
+	)
+	(no_connect
 		(at 74.93 137.16)
 		(uuid "1ec9838d-baf4-4221-8ba6-11d4f6fae36b")
+	)
+	(no_connect
+		(at 71.12 167.64)
+		(uuid "1fa2a0e5-a69c-435e-b4d0-37b3a7836838")
+	)
+	(no_connect
+		(at 63.5 167.64)
+		(uuid "25bfa1f9-906f-48a1-88ef-d0b5419b6501")
+	)
+	(no_connect
+		(at 93.98 167.64)
+		(uuid "2a147f02-524a-41cd-a0b5-9d33335438a6")
+	)
+	(no_connect
+		(at 86.36 167.64)
+		(uuid "2c294b87-98b1-4bdc-b318-fbef7cb493a6")
 	)
 	(no_connect
 		(at 63.5 137.16)
@@ -2458,6 +2478,10 @@
 	(no_connect
 		(at 59.69 137.16)
 		(uuid "3d4daf22-09f5-4c5c-b17d-ddfda1313aa3")
+	)
+	(no_connect
+		(at 74.93 167.64)
+		(uuid "435611ad-378b-4026-9473-8e7513201987")
 	)
 	(no_connect
 		(at 44.45 137.16)
@@ -2480,8 +2504,20 @@
 		(uuid "9fe19b0a-20b3-4941-bc4c-11194e439bc3")
 	)
 	(no_connect
+		(at 67.31 167.64)
+		(uuid "a3b2611c-6ed5-4dc3-8284-0e82c9db8de4")
+	)
+	(no_connect
 		(at 101.6 137.16)
 		(uuid "a8f8d672-8486-40f4-ac56-d4ebda62aefa")
+	)
+	(no_connect
+		(at 78.74 167.64)
+		(uuid "bdaed0f0-b371-4758-842e-2315ee5d15eb")
+	)
+	(no_connect
+		(at 82.55 167.64)
+		(uuid "c0d438fa-8b08-4ee8-9a10-3973953e68d2")
 	)
 	(no_connect
 		(at 48.26 137.16)
@@ -2504,6 +2540,10 @@
 		(uuid "e8124a3f-385e-4288-9e98-2c1d28d60979")
 	)
 	(no_connect
+		(at 90.17 167.64)
+		(uuid "e82b6c5e-856c-4f87-8fc4-ee428449dc56")
+	)
+	(no_connect
 		(at 105.41 137.16)
 		(uuid "ea6a2616-b554-4521-9a5f-33152980a90d")
 	)
@@ -2514,6 +2554,26 @@
 	(no_connect
 		(at 55.88 137.16)
 		(uuid "fe26bbc3-340a-496b-911a-c162263b92d9")
+	)
+	(wire
+		(pts
+			(xy 124.46 177.8) (xy 124.46 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02446a6e-7f71-4ee7-95fd-0f761d432d96")
+	)
+	(wire
+		(pts
+			(xy 139.7 53.34) (xy 139.7 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "162f0053-eb33-4414-8216-f4c6ced5af63")
 	)
 	(wire
 		(pts
@@ -2647,13 +2707,23 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 54.61) (xy 147.32 54.61)
+			(xy 144.78 54.61) (xy 147.32 54.61)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "338b25da-bae2-41af-b580-0be7819cf215")
+		(uuid "2e0318b6-ca84-463e-b9eb-68013248010c")
+	)
+	(wire
+		(pts
+			(xy 137.16 54.61) (xy 139.7 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "315f6bc8-57b0-4dbb-b921-962552fd9310")
 	)
 	(wire
 		(pts
@@ -2684,6 +2754,16 @@
 			(type default)
 		)
 		(uuid "428da127-ac71-4af4-9fe7-3662ee95e18b")
+	)
+	(wire
+		(pts
+			(xy 36.83 168.91) (xy 36.83 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44836579-5d96-4b09-9342-9257680f8bc7")
 	)
 	(wire
 		(pts
@@ -2767,6 +2847,16 @@
 	)
 	(wire
 		(pts
+			(xy 44.45 177.8) (xy 44.45 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a3c3d7f-aa70-42dd-afb6-20f34e650220")
+	)
+	(wire
+		(pts
 			(xy 240.03 54.61) (xy 240.03 55.88)
 		)
 		(stroke
@@ -2804,16 +2894,6 @@
 			(type default)
 		)
 		(uuid "6464db36-1512-44d9-8907-b75c59a99539")
-	)
-	(wire
-		(pts
-			(xy 138.43 54.61) (xy 137.16 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "66e8f7b2-79a8-4b28-ae51-d4767425e0f7")
 	)
 	(wire
 		(pts
@@ -2917,6 +2997,16 @@
 	)
 	(wire
 		(pts
+			(xy 116.84 177.8) (xy 116.84 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "86f22a69-ac6a-4a14-bf08-16c213b5c326")
+	)
+	(wire
+		(pts
 			(xy 92.71 54.61) (xy 91.44 54.61)
 		)
 		(stroke
@@ -2934,6 +3024,16 @@
 			(type default)
 		)
 		(uuid "89944fd0-8b7f-4462-b50a-917e36a73b61")
+	)
+	(wire
+		(pts
+			(xy 44.45 168.91) (xy 44.45 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a617f9a-ed47-4857-9cc2-d37905df4bbf")
 	)
 	(wire
 		(pts
@@ -3197,6 +3297,16 @@
 	)
 	(wire
 		(pts
+			(xy 124.46 168.91) (xy 124.46 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c5364084-1923-47ac-babb-777588428aa4")
+	)
+	(wire
+		(pts
 			(xy 161.29 31.75) (xy 161.29 46.99)
 		)
 		(stroke
@@ -3214,6 +3324,16 @@
 			(type default)
 		)
 		(uuid "c9cde611-0d45-4efe-978e-781e18e0cbf5")
+	)
+	(wire
+		(pts
+			(xy 116.84 168.91) (xy 116.84 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc4e8c45-ff12-4a31-a224-808423a05fc9")
 	)
 	(wire
 		(pts
@@ -3297,6 +3417,16 @@
 	)
 	(wire
 		(pts
+			(xy 36.83 177.8) (xy 36.83 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e6e69741-3a08-4159-998c-e498da770b66")
+	)
+	(wire
+		(pts
 			(xy 116.84 36.83) (xy 123.19 36.83)
 		)
 		(stroke
@@ -3334,6 +3464,16 @@
 			(type default)
 		)
 		(uuid "f3158714-13a2-42a2-a25f-12301fb08e69")
+	)
+	(wire
+		(pts
+			(xy 144.78 54.61) (xy 144.78 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f323de61-ab3f-4965-8fb4-d3dac1a5988f")
 	)
 	(wire
 		(pts
@@ -3446,7 +3586,7 @@
 		(uuid "1e40b02c-7c09-487b-a3b4-53b4f8ae5707")
 	)
 	(label "SDOA"
-		(at 138.43 54.61 0)
+		(at 139.7 45.72 90)
 		(effects
 			(font
 				(size 0.762 0.762)
@@ -3466,7 +3606,7 @@
 		(uuid "2a24a241-36e9-43cf-ad23-243cf6a87d41")
 	)
 	(label "~{CS}B"
-		(at 36.83 167.64 270)
+		(at 36.83 177.8 270)
 		(effects
 			(font
 				(size 0.762 0.762)
@@ -3546,7 +3686,7 @@
 		(uuid "4460c6ee-65d5-44f2-8e6f-4758fae03d01")
 	)
 	(label "SCLKA"
-		(at 124.46 167.64 270)
+		(at 124.46 177.8 270)
 		(effects
 			(font
 				(size 0.762 0.762)
@@ -3566,7 +3706,7 @@
 		(uuid "5ea4b31a-764e-4a0d-8e5b-469e08845acc")
 	)
 	(label "~{CS}A"
-		(at 116.84 167.64 270)
+		(at 116.84 177.8 270)
 		(effects
 			(font
 				(size 0.762 0.762)
@@ -3584,16 +3724,6 @@
 			(justify right bottom)
 		)
 		(uuid "68efb50d-ab3e-45e2-92e4-abfc9c8b2bc9")
-	)
-	(label "SDOB"
-		(at 146.05 54.61 180)
-		(effects
-			(font
-				(size 0.762 0.762)
-			)
-			(justify right bottom)
-		)
-		(uuid "6a0fc52f-1e19-4a1f-9aa2-f1ddc27d59e5")
 	)
 	(label "MICROSTEP_BIT2"
 		(at 86.36 137.16 90)
@@ -3696,6 +3826,16 @@
 		(uuid "db727cdb-9dbb-4308-beba-1f63600fd3aa")
 	)
 	(label "SDOB"
+		(at 144.78 45.72 90)
+		(effects
+			(font
+				(size 0.762 0.762)
+			)
+			(justify left bottom)
+		)
+		(uuid "ed64391c-9779-4fee-b4e3-bac25b734d0f")
+	)
+	(label "SDOB"
 		(at 40.64 167.64 270)
 		(effects
 			(font
@@ -3706,7 +3846,7 @@
 		(uuid "f928a898-2862-4a15-90bb-2bf18be9e6b2")
 	)
 	(label "SCLKB"
-		(at 44.45 167.64 270)
+		(at 44.45 177.8 270)
 		(effects
 			(font
 				(size 0.762 0.762)
@@ -4017,6 +4157,87 @@
 			(project "Stepper Motor Driver"
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5"
 					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 144.78 49.53 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "238f270a-75da-48f5-ad44-8174b6b18803")
+		(property "Reference" "R44"
+			(at 146.558 47.244 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "50"
+			(at 146.558 49.784 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+			(at 146.558 49.53 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 144.78 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 144.78 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "ab51d572-94d1-4337-b960-30daa54e8b91")
+		)
+		(pin "1"
+			(uuid "18c3d257-8d9c-4d15-a061-aad8331bb4f1")
+		)
+		(instances
+			(project "Stepper Motor Driver"
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5"
+					(reference "R44")
 					(unit 1)
 				)
 			)
@@ -4500,6 +4721,87 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 124.46 172.72 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "662241ff-cecc-49aa-9ceb-717194783d0e")
+		(property "Reference" "R45"
+			(at 126.492 172.212 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "50"
+			(at 126.492 174.752 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+			(at 122.682 172.72 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 124.46 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 124.46 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5401973e-1006-44a7-b2a8-8a4f6138956c")
+		)
+		(pin "2"
+			(uuid "413d2864-ffef-48f0-8e6e-18a4a861dc79")
+		)
+		(instances
+			(project "Stepper Motor Driver"
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5"
+					(reference "R45")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3.3V")
 		(at 124.46 137.16 0)
 		(unit 1)
@@ -4814,6 +5116,89 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 139.7 49.53 0)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8622959c-3f1a-4489-943b-aa53186f4f69")
+		(property "Reference" "R43"
+			(at 137.16 48.2599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "50"
+			(at 137.16 50.7999 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+			(at 137.922 49.53 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 139.7 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 139.7 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "37f13a9e-869e-4483-9a27-6ca8350e18f5")
+		)
+		(pin "1"
+			(uuid "513dc128-afb3-49a8-abd3-5177b708e9b5")
+		)
+		(instances
+			(project "Stepper Motor Driver"
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5"
+					(reference "R43")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 195.58 54.61 90)
 		(unit 1)
@@ -4887,6 +5272,87 @@
 			(project "Stepper Motor Driver"
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5"
 					(reference "C5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 116.84 172.72 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "94a3a1c4-3a30-41e3-9c52-c1101cb49864")
+		(property "Reference" "R46"
+			(at 118.618 172.466 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "50"
+			(at 118.618 175.006 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+			(at 115.062 172.72 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 116.84 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 116.84 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1bf117f7-bdcc-4e6a-9c03-64ff66418c28")
+		)
+		(pin "2"
+			(uuid "df04cbf8-bede-4767-ae1e-3fdd76148055")
+		)
+		(instances
+			(project "Stepper Motor Driver"
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5"
+					(reference "R46")
 					(unit 1)
 				)
 			)
@@ -5670,6 +6136,87 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 44.45 172.72 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d4de5ee4-2ca9-4fca-a619-3a0594965e77")
+		(property "Reference" "R48"
+			(at 46.736 172.974 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "50"
+			(at 46.736 175.514 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+			(at 42.672 172.72 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 44.45 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 44.45 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9c2b29cb-ed10-4736-84c0-f83012bc1ddf")
+		)
+		(pin "2"
+			(uuid "886843c7-775a-43a4-a6af-30befde5a037")
+		)
+		(instances
+			(project "Stepper Motor Driver"
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5"
+					(reference "R48")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 212.09 54.61 270)
 		(unit 1)
@@ -5826,6 +6373,87 @@
 			(project "Stepper Motor Driver"
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5"
 					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 36.83 172.72 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "dbe49aca-1002-472c-96aa-790caf7d41b9")
+		(property "Reference" "R47"
+			(at 38.608 172.974 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "50"
+			(at 38.608 175.514 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+			(at 35.052 172.72 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 36.83 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 36.83 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "12b32281-ee34-4495-b49f-89a66e15e0d8")
+		)
+		(pin "2"
+			(uuid "13d316a0-327e-460c-afe5-4b50ae1878d0")
+		)
+		(instances
+			(project "Stepper Motor Driver"
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5"
+					(reference "R47")
 					(unit 1)
 				)
 			)
