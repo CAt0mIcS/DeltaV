@@ -2418,6 +2418,12 @@
 		(uuid "7f53639b-5564-416c-8ec8-ded0e1eea22d")
 	)
 	(junction
+		(at 124.46 133.35)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9877e7e3-32cd-47e9-aaf5-7e3f074060b4")
+	)
+	(junction
 		(at 260.35 54.61)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2577,6 +2583,16 @@
 	)
 	(wire
 		(pts
+			(xy 124.46 133.35) (xy 124.46 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "16498506-9cdf-48a8-a072-ed8de43cae66")
+	)
+	(wire
+		(pts
 			(xy 125.73 46.99) (xy 105.41 46.99)
 		)
 		(stroke
@@ -2664,6 +2680,16 @@
 			(type default)
 		)
 		(uuid "29f39e22-5b37-44ab-a8bb-4aa0b03f3ae6")
+	)
+	(wire
+		(pts
+			(xy 124.46 129.54) (xy 124.46 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b2a0ef2-4eaa-40bb-b778-44fda8486163")
 	)
 	(wire
 		(pts
@@ -4803,7 +4829,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 124.46 137.16 0)
+		(at 124.46 129.54 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4813,7 +4839,7 @@
 		(dnp no)
 		(uuid "6aa3dfa8-a108-4b62-b5f1-d0b36ec7d077")
 		(property "Reference" "#PWR07"
-			(at 124.46 140.97 0)
+			(at 124.46 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4824,7 +4850,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 128.524 134.874 0)
+			(at 128.524 127.254 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4834,7 +4860,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 124.46 137.16 0)
+			(at 124.46 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4845,7 +4871,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 124.46 137.16 0)
+			(at 124.46 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4856,7 +4882,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 124.46 137.16 0)
+			(at 124.46 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5193,6 +5219,83 @@
 			(project "Stepper Motor Driver"
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5"
 					(reference "R43")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 132.08 133.35 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8bba2f60-54b8-4aac-8ffa-c52a4a7b9984")
+		(property "Reference" "#PWR017"
+			(at 138.43 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 135.89 133.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 132.08 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 132.08 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 132.08 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d21a6ccd-3fe2-4976-ab48-b724fb7a9701")
+		)
+		(instances
+			(project "Stepper Motor Driver"
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5"
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -6211,6 +6314,85 @@
 			(project "Stepper Motor Driver"
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5"
 					(reference "R48")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 128.27 133.35 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d66d3b08-2666-4171-8fe3-ac30276abde7")
+		(property "Reference" "C37"
+			(at 128.27 140.97 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 128.27 138.43 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+			(at 132.08 132.3848 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 128.27 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 128.27 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e2e60e5b-19a6-4c5c-b3e3-307442613118")
+		)
+		(pin "2"
+			(uuid "0df44156-f526-4db8-8098-2d1b546123d1")
+		)
+		(instances
+			(project "Stepper Motor Driver"
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5"
+					(reference "C37")
 					(unit 1)
 				)
 			)
