@@ -2051,6 +2051,17 @@
 			(uuid "2e1438c0-cc77-4eb8-bb50-ed148aafbd20")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../../3d-models/mosfet_irf530npbf.stp"
+			(offset
+				(xyz 0 -1 7)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -0)
+			)
+		)
 	)
 	(footprint "Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical"
 		(layer "F.Cu")
@@ -15878,6 +15889,17 @@
 			(uuid "02c92bc4-0fac-478c-8fad-09d80a8774d0")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../../3d-models/mosfet_irf530npbf.stp"
+			(offset
+				(xyz 0 -1 7)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -0)
+			)
+		)
 	)
 	(footprint "Resistor_SMD:R_1206_3216Metric"
 		(layer "F.Cu")
@@ -17405,6 +17427,17 @@
 			(uuid "0e0b1396-cbc7-4d34-9769-02f1d1e0a440")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../../3d-models/mosfet_irf530npbf.stp"
+			(offset
+				(xyz 0 -1 7)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -0)
+			)
+		)
 	)
 	(footprint "Resistor_SMD:R_1206_3216Metric"
 		(layer "F.Cu")
@@ -19968,6 +20001,17 @@
 			(uuid "0488c735-7ce2-4465-8abb-547392585c3d")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../../3d-models/mosfet_irf530npbf.stp"
+			(offset
+				(xyz 0 -1 7)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -0)
+			)
+		)
 	)
 	(footprint "Resistor_SMD:R_1206_3216Metric"
 		(layer "F.Cu")
@@ -24601,6 +24645,17 @@
 			(uuid "0ef4c795-7523-4189-b53d-ac2574c56365")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../../3d-models/mosfet_irf530npbf.stp"
+			(offset
+				(xyz 0 -1 7)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -0)
+			)
+		)
 	)
 	(footprint "Resistor_SMD:R_1206_3216Metric"
 		(layer "F.Cu")
@@ -30471,6 +30526,17 @@
 			(uuid "8d01ab2c-2bb2-41dd-a7cb-5899f3a610ae")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../../3d-models/mosfet_irf530npbf.stp"
+			(offset
+				(xyz 0 -1 7)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -0)
+			)
+		)
 	)
 	(footprint "IRF530NPBF:IRF530NPBF"
 		(layer "F.Cu")
@@ -30902,6 +30968,17 @@
 			(uuid "1cb8f647-3696-459f-8619-72ce09b150ad")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../../3d-models/mosfet_irf530npbf.stp"
+			(offset
+				(xyz 0 -1 7)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -0)
+			)
+		)
 	)
 	(footprint "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 		(layer "F.Cu")
@@ -37612,6 +37689,17 @@
 			(uuid "264795ec-0c66-46d7-ab6b-5aee0f01ff74")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../../3d-models/mosfet_irf530npbf.stp"
+			(offset
+				(xyz 0 -1 7)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -0)
+			)
+		)
 	)
 	(footprint "Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical"
 		(layer "F.Cu")
