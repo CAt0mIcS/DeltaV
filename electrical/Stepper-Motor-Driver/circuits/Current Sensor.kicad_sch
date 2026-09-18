@@ -1519,12 +1519,6 @@
 		(color 0 0 0 0)
 		(uuid "eabace01-6b4b-433f-bb4f-6aea36989465")
 	)
-	(junction
-		(at 207.01 58.42)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ed9e51b4-d1a1-433e-8323-598cdfed4ccb")
-	)
 	(wire
 		(pts
 			(xy 181.61 48.26) (xy 186.69 48.26)
@@ -1577,16 +1571,6 @@
 	)
 	(wire
 		(pts
-			(xy 207.01 58.42) (xy 215.9 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4314c855-b045-4dce-87ff-abfbd67c5759")
-	)
-	(wire
-		(pts
 			(xy 204.47 60.96) (xy 224.79 60.96)
 		)
 		(stroke
@@ -1597,7 +1581,7 @@
 	)
 	(wire
 		(pts
-			(xy 204.47 58.42) (xy 207.01 58.42)
+			(xy 204.47 58.42) (xy 215.9 58.42)
 		)
 		(stroke
 			(width 0)
@@ -2384,90 +2368,6 @@
 				)
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/dc8574df-72f0-4dd6-9c05-ed1f6574d07d"
 					(reference "#PWR047")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 207.01 58.42 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8504b906-de36-41d0-b423-48741a285658")
-		(property "Reference" "TP18"
-			(at 209.55 53.8479 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 209.55 56.3879 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical"
-			(at 212.09 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 212.09 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 207.01 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "10ccf4ad-6237-4a56-a236-fb895614cdb3")
-		)
-		(instances
-			(project "Stepper Motor Driver"
-				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/06fa326d-3253-4b51-93b8-81e3e564f7d6"
-					(reference "TP18")
-					(unit 1)
-				)
-				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5/dc8574df-72f0-4dd6-9c05-ed1f6574d07d"
-					(reference "TP22")
 					(unit 1)
 				)
 			)
