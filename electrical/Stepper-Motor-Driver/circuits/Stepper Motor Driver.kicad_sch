@@ -5,6 +5,147 @@
 	(uuid "c25060f1-f2f3-4cbd-b6ee-5f66e19502f5")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Connector:Conn_01x01_Socket"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x01_Socket"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x01, script generated"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Conn_01x01_Socket_1_1"
+				(polyline
+					(pts
+						(xy -1.27 0) (xy -0.508 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -0.508)
+					(mid -0.5058 0)
+					(end 0 0.508)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector:Screw_Terminal_01x03"
 			(pin_names
 				(offset 1.016)
@@ -1117,1108 +1258,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Tang Nano 9k:Tang_Nano_9k"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Tang_Nano_9k_1_1"
-				(rectangle
-					(start 0 0)
-					(end 8.89 -60.96)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type color)
-						(color 11 234 255 0.3882352941)
-					)
-				)
-				(rectangle
-					(start 0 0)
-					(end 25.4 -92.71)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 0 -60.96)
-					(end 8.89 -92.71)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type color)
-						(color 8 255 85 0.3019607843)
-					)
-				)
-				(rectangle
-					(start 8.89 0)
-					(end 16.51 -92.71)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type color)
-						(color 255 255 194 1)
-					)
-				)
-				(rectangle
-					(start 16.51 0)
-					(end 25.4 -5.08)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type color)
-						(color 8 255 85 0.3019607843)
-					)
-				)
-				(rectangle
-					(start 16.51 -5.08)
-					(end 25.4 -34.925)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type color)
-						(color 255 252 180 0.3019607843)
-					)
-				)
-				(rectangle
-					(start 16.51 -34.925)
-					(end 25.4 -65.405)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type color)
-						(color 8 255 85 0.3019607843)
-					)
-				)
-				(rectangle
-					(start 16.51 -65.405)
-					(end 25.4 -69.215)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type color)
-						(color 255 0 0 0.6)
-					)
-				)
-				(rectangle
-					(start 16.51 -69.215)
-					(end 25.4 -76.835)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type color)
-						(color 8 255 85 0.3019607843)
-					)
-				)
-				(rectangle
-					(start 16.51 -76.835)
-					(end 25.4 -84.455)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type color)
-						(color 11 234 255 0.3882352941)
-					)
-				)
-				(rectangle
-					(start 16.51 -84.455)
-					(end 25.4 -88.9)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type color)
-						(color 0 0 0 0.6)
-					)
-				)
-				(rectangle
-					(start 16.51 -88.9)
-					(end 25.4 -92.71)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type color)
-						(color 255 0 0 0.6)
-					)
-				)
-				(text "Bank1@3.3V"
-					(at 10.16 -19.812 900)
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(text "Bank2@3.3V"
-					(at 10.16 -76.2 900)
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(text "Tang Nano 9k"
-					(at 12.446 1.016 0)
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(text "Bank3@1.8V"
-					(at 15.24 -19.812 900)
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(pin power_in line
-					(at 27.94 -86.36 180)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 27.94 -90.17 180)
-					(length 2.54)
-					(name "3.3V"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 27.94 -67.31 180)
-					(length 2.54)
-					(name "5V"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -2.54 -17.78 0)
-					(length 2.54)
-					(name "IOB8A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "25"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -2.54 -21.59 0)
-					(length 2.54)
-					(name "IOB8B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "26"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -2.54 -25.4 0)
-					(length 2.54)
-					(name "IOB11A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "27"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -2.54 -29.21 0)
-					(length 2.54)
-					(name "IOB11B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "28"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -2.54 -33.02 0)
-					(length 2.54)
-					(name "IOB13A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "29"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -2.54 -36.83 0)
-					(length 2.54)
-					(name "IOB13B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "30"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 27.94 -78.74 180)
-					(length 2.54)
-					(name "IOB15A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "31"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 27.94 -82.55 180)
-					(length 2.54)
-					(name "IOB15B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "32"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -2.54 -40.64 0)
-					(length 2.54)
-					(name "IOB23A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "33"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -2.54 -44.45 0)
-					(length 2.54)
-					(name "IOB23B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "34"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -2.54 -52.07 0)
-					(length 2.54)
-					(name "IOB29A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "35"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -2.54 -10.16 0)
-					(length 2.54)
-					(name "IOB29B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "36"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -2.54 -6.35 0)
-					(length 2.54)
-					(name "IOB31A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "37"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -2.54 -2.54 0)
-					(length 2.54)
-					(name "IOB31B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "38"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -2.54 -13.97 0)
-					(length 2.54)
-					(name "IOB33A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "39"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -2.54 -48.26 0)
-					(length 2.54)
-					(name "IOB33B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "40"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -2.54 -55.88 0)
-					(length 2.54)
-					(name "IOB41A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "41"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -2.54 -59.69 0)
-					(length 2.54)
-					(name "IOB41B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "42"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 27.94 -71.12 180)
-					(length 2.54)
-					(name "IOR24B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "48"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 27.94 -74.93 180)
-					(length 2.54)
-					(name "IOR24A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "49"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -2.54 -63.5 0)
-					(length 2.54)
-					(name "IOR17B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "51"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -2.54 -67.31 0)
-					(length 2.54)
-					(name "IOR15B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "53"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -2.54 -71.12 0)
-					(length 2.54)
-					(name "IOR15A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "54"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -2.54 -74.93 0)
-					(length 2.54)
-					(name "IOR14B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "55"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -2.54 -78.74 0)
-					(length 2.54)
-					(name "IOR14A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "56"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -2.54 -82.55 0)
-					(length 2.54)
-					(name "IOR13A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "57"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 27.94 -2.54 180)
-					(length 2.54)
-					(name "IOR5A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "63"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -2.54 -86.36 0)
-					(length 2.54)
-					(name "IOT42B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "68"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -2.54 -90.17 0)
-					(length 2.54)
-					(name "IOT42A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "69"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 27.94 -63.5 180)
-					(length 2.54)
-					(name "IOT41B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "70"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 27.94 -59.69 180)
-					(length 2.54)
-					(name "IOT41A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "71"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 27.94 -55.88 180)
-					(length 2.54)
-					(name "IOT39B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "72"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 27.94 -52.07 180)
-					(length 2.54)
-					(name "IOT39A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "73"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 27.94 -48.26 180)
-					(length 2.54)
-					(name "IOT38B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "74"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 27.94 -44.45 180)
-					(length 2.54)
-					(name "IOT38A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "75"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 27.94 -40.64 180)
-					(length 2.54)
-					(name "IOT37B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "76"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 27.94 -36.83 180)
-					(length 2.54)
-					(name "IOT37A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "77"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 27.94 -33.02 180)
-					(length 2.54)
-					(name "IOT12B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "79"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 27.94 -29.21 180)
-					(length 2.54)
-					(name "IOT12A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "80"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 27.94 -25.4 180)
-					(length 2.54)
-					(name "IOT11B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "81"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 27.94 -21.59 180)
-					(length 2.54)
-					(name "IOT11A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "82"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 27.94 -17.78 180)
-					(length 2.54)
-					(name "IOT10B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "83"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 27.94 -13.97 180)
-					(length 2.54)
-					(name "IOT10A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "84"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 27.94 -10.16 180)
-					(length 2.54)
-					(name "IOT8B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "85"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 27.94 -6.35 180)
-					(length 2.54)
-					(name "IOT8A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "86"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:+3.3V"
 			(power global)
 			(pin_numbers
@@ -2571,12 +1610,6 @@
 		(uuid "bda25742-c464-48db-b779-aa53a6ba3c30")
 	)
 	(junction
-		(at 39.37 21.59)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "cc5acaff-8fc9-4b87-b685-f6c3a713b279")
-	)
-	(junction
 		(at 52.07 54.61)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2587,114 +1620,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ebd3f8e3-536c-4b4d-8827-856b0b5f90a4")
-	)
-	(no_connect
-		(at 97.79 167.64)
-		(uuid "16893448-3ead-482c-b4d4-aac3f3b97743")
-	)
-	(no_connect
-		(at 74.93 137.16)
-		(uuid "1ec9838d-baf4-4221-8ba6-11d4f6fae36b")
-	)
-	(no_connect
-		(at 71.12 167.64)
-		(uuid "1fa2a0e5-a69c-435e-b4d0-37b3a7836838")
-	)
-	(no_connect
-		(at 63.5 167.64)
-		(uuid "25bfa1f9-906f-48a1-88ef-d0b5419b6501")
-	)
-	(no_connect
-		(at 93.98 167.64)
-		(uuid "2a147f02-524a-41cd-a0b5-9d33335438a6")
-	)
-	(no_connect
-		(at 86.36 167.64)
-		(uuid "2c294b87-98b1-4bdc-b318-fbef7cb493a6")
-	)
-	(no_connect
-		(at 63.5 137.16)
-		(uuid "2c7255dc-8d5f-431a-9893-acae016d53ba")
-	)
-	(no_connect
-		(at 59.69 137.16)
-		(uuid "3d4daf22-09f5-4c5c-b17d-ddfda1313aa3")
-	)
-	(no_connect
-		(at 74.93 167.64)
-		(uuid "435611ad-378b-4026-9473-8e7513201987")
-	)
-	(no_connect
-		(at 44.45 137.16)
-		(uuid "4c689d7d-c8d2-4eeb-9941-536ae00ee1a0")
-	)
-	(no_connect
-		(at 36.83 137.16)
-		(uuid "6243d415-1d90-4e56-834a-118ac7a65f52")
-	)
-	(no_connect
-		(at 71.12 137.16)
-		(uuid "7e1d67ff-fc3f-43c6-92ea-bc6a075d87f5")
-	)
-	(no_connect
-		(at 40.64 137.16)
-		(uuid "92cf45ae-4550-447f-8b8f-9ed2b5d23597")
-	)
-	(no_connect
-		(at 67.31 137.16)
-		(uuid "9fe19b0a-20b3-4941-bc4c-11194e439bc3")
-	)
-	(no_connect
-		(at 67.31 167.64)
-		(uuid "a3b2611c-6ed5-4dc3-8284-0e82c9db8de4")
-	)
-	(no_connect
-		(at 101.6 137.16)
-		(uuid "a8f8d672-8486-40f4-ac56-d4ebda62aefa")
-	)
-	(no_connect
-		(at 78.74 167.64)
-		(uuid "bdaed0f0-b371-4758-842e-2315ee5d15eb")
-	)
-	(no_connect
-		(at 82.55 167.64)
-		(uuid "c0d438fa-8b08-4ee8-9a10-3973953e68d2")
-	)
-	(no_connect
-		(at 48.26 137.16)
-		(uuid "c1cc6ea2-1e9e-4c71-9d85-fa24e22391c1")
-	)
-	(no_connect
-		(at 78.74 137.16)
-		(uuid "d192905b-f900-4e9a-a910-4931b506d4b7")
-	)
-	(no_connect
-		(at 116.84 137.16)
-		(uuid "e4d5a0eb-0d9e-49be-bba4-0ba94af88e1e")
-	)
-	(no_connect
-		(at 113.03 137.16)
-		(uuid "e67f40e5-fd35-4dd3-b695-75a675132c4a")
-	)
-	(no_connect
-		(at 109.22 137.16)
-		(uuid "e8124a3f-385e-4288-9e98-2c1d28d60979")
-	)
-	(no_connect
-		(at 90.17 167.64)
-		(uuid "e82b6c5e-856c-4f87-8fc4-ee428449dc56")
-	)
-	(no_connect
-		(at 105.41 137.16)
-		(uuid "ea6a2616-b554-4521-9a5f-33152980a90d")
-	)
-	(no_connect
-		(at 52.07 137.16)
-		(uuid "f85af275-d47e-49ae-b02c-a8440a416499")
-	)
-	(no_connect
-		(at 55.88 137.16)
-		(uuid "fe26bbc3-340a-496b-911a-c162263b92d9")
 	)
 	(wire
 		(pts
@@ -2935,16 +1860,6 @@
 			(type default)
 		)
 		(uuid "44836579-5d96-4b09-9342-9257680f8bc7")
-	)
-	(wire
-		(pts
-			(xy 39.37 21.59) (xy 63.5 21.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4490d628-cbff-4bff-8513-8313819c1a85")
 	)
 	(wire
 		(pts
@@ -3488,7 +2403,7 @@
 	)
 	(wire
 		(pts
-			(xy 16.51 21.59) (xy 39.37 21.59)
+			(xy 16.51 21.59) (xy 63.5 21.59)
 		)
 		(stroke
 			(width 0)
@@ -3736,16 +2651,6 @@
 		)
 		(uuid "016e9127-50b2-4801-bb3f-fcc8fc715424")
 	)
-	(label "DIR"
-		(at 93.98 137.16 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "01a11375-af1b-4877-9b25-7f9bc42f19dc")
-	)
 	(label "LI2A"
 		(at 109.22 167.64 270)
 		(effects
@@ -3765,16 +2670,6 @@
 			(justify right bottom)
 		)
 		(uuid "1af32c11-9284-4a3a-b0d9-38926232ed93")
-	)
-	(label "MICROSTEP_BIT3"
-		(at 82.55 137.16 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "1b56efc5-ef04-437e-a2be-0cd9e6a64a2c")
 	)
 	(label "LI2B"
 		(at 48.26 167.64 270)
@@ -3926,16 +2821,6 @@
 		)
 		(uuid "68efb50d-ab3e-45e2-92e4-abfc9c8b2bc9")
 	)
-	(label "MICROSTEP_BIT2"
-		(at 86.36 137.16 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "7e89f457-65ac-4d2b-b6ad-2d31ba06e27f")
-	)
 	(label "LI1B"
 		(at 240.03 64.77 270)
 		(effects
@@ -3945,26 +2830,6 @@
 			(justify right bottom)
 		)
 		(uuid "867a5962-c807-48e0-9dde-5d9ffea19e21")
-	)
-	(label "MICROSTEP_BIT1"
-		(at 90.17 137.16 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "87d28795-1e78-427d-8756-89d0c02ec406")
-	)
-	(label "STEP"
-		(at 97.79 137.16 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "8c2f4b0a-981a-49d0-98a9-5b841d6f9e27")
 	)
 	(label "HI1B"
 		(at 260.35 64.77 270)
@@ -4127,6 +2992,86 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Conn_01x01_Socket")
+		(at 116.84 162.56 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0728bb5a-3703-4801-bfb3-71907d1c5f4c")
+		(property "Reference" "J12"
+			(at 118.11 161.9249 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_01x01_Socket"
+			(at 118.11 164.4649 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 116.84 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 116.84 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated"
+			(at 116.84 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5ee4bdce-5e01-4d6f-8e4a-f0d3aaeb118b")
+		)
+		(instances
+			(project "Stepper Motor Driver"
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5"
+					(reference "J12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 191.77 54.61 270)
 		(unit 1)
@@ -4200,6 +3145,86 @@
 			(project "Stepper Motor Driver"
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5"
 					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x01_Socket")
+		(at 105.41 162.56 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0e72ba4a-bbae-4d3a-8bac-71410bf5e258")
+		(property "Reference" "J15"
+			(at 106.68 161.9249 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_01x01_Socket"
+			(at 106.68 164.4649 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 105.41 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 105.41 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated"
+			(at 105.41 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7601346d-2164-4794-9200-074af7537f98")
+		)
+		(instances
+			(project "Stepper Motor Driver"
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5"
+					(reference "J15")
 					(unit 1)
 				)
 			)
@@ -4524,41 +3549,42 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
-		(at 39.37 19.05 0)
+		(lib_id "Connector:Conn_01x01_Socket")
+		(at 113.03 162.56 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "2bef8c74-7106-43a2-82df-2630bb749b01")
-		(property "Reference" "H2"
-			(at 41.91 16.5099 0)
+		(uuid "29ae26f0-1100-4a3c-8191-a7603d6a96ab")
+		(property "Reference" "J13"
+			(at 114.3 161.9249 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Value" "MountingHole_Pad"
-			(at 41.91 19.0499 0)
+		(property "Value" "Conn_01x01_Socket"
+			(at 114.3 164.4649 90)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad"
-			(at 39.37 19.05 0)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 113.03 162.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4569,7 +3595,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 39.37 19.05 0)
+			(at 113.03 162.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4579,8 +3605,8 @@
 				)
 			)
 		)
-		(property "Description" "Mounting Hole with connection"
-			(at 39.37 19.05 0)
+		(property "Description" "Generic connector, single row, 01x01, script generated"
+			(at 113.03 162.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4591,12 +3617,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "fcbedb76-1eb9-42b3-9307-c4f3a75f962e")
+			(uuid "5acd6c7a-7dfa-4a22-966c-444ed101131c")
 		)
 		(instances
 			(project "Stepper Motor Driver"
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5"
-					(reference "H2")
+					(reference "J13")
 					(unit 1)
 				)
 			)
@@ -4684,6 +3710,86 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Conn_01x01_Socket")
+		(at 59.69 162.56 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "346aab10-52ba-4c5b-8012-96f0876063e8")
+		(property "Reference" "J17"
+			(at 60.96 161.9249 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_01x01_Socket"
+			(at 60.96 164.4649 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 59.69 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 59.69 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated"
+			(at 59.69 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e0dcc0eb-83d0-4e2b-8094-a94680121f47")
+		)
+		(instances
+			(project "Stepper Motor Driver"
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5"
+					(reference "J17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 251.46 54.61 270)
 		(unit 1)
@@ -4763,6 +3869,325 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Conn_01x01_Socket")
+		(at 120.65 162.56 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3ba33d83-a8d6-4262-8b7e-ef7282e6cd80")
+		(property "Reference" "J11"
+			(at 121.92 161.9249 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_01x01_Socket"
+			(at 121.92 164.4649 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 120.65 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 120.65 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated"
+			(at 120.65 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a64bddfe-efeb-4009-b9fe-7045491a6b50")
+		)
+		(instances
+			(project "Stepper Motor Driver"
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5"
+					(reference "J11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x01_Socket")
+		(at 44.45 162.56 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3c00220d-a67c-4035-affd-68b4dc9c6247")
+		(property "Reference" "J21"
+			(at 45.72 161.9249 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_01x01_Socket"
+			(at 45.72 164.4649 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 44.45 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 44.45 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated"
+			(at 44.45 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "24fb76be-0ba0-4869-a1ff-61fd1fe55767")
+		)
+		(instances
+			(project "Stepper Motor Driver"
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5"
+					(reference "J21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x01_Socket")
+		(at 101.6 162.56 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4131ac09-3339-4c4b-8e42-1c7ca868cde5")
+		(property "Reference" "J16"
+			(at 102.87 161.9249 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_01x01_Socket"
+			(at 102.87 164.4649 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 101.6 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 101.6 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated"
+			(at 101.6 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5d51256c-be8f-4ecf-b7e8-1b16c397e3ac")
+		)
+		(instances
+			(project "Stepper Motor Driver"
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5"
+					(reference "J16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x01_Socket")
+		(at 52.07 162.56 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "43467bb4-0ae3-4a62-ba11-c60a5da8607f")
+		(property "Reference" "J19"
+			(at 53.34 161.9249 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_01x01_Socket"
+			(at 53.34 164.4649 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 52.07 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 52.07 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated"
+			(at 52.07 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "693093e5-1453-4c34-b470-76cac3e5a6a7")
+		)
+		(instances
+			(project "Stepper Motor Driver"
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5"
+					(reference "J19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 16.51 21.59 0)
 		(unit 1)
@@ -4835,6 +4260,246 @@
 			(project "Stepper Motor Driver"
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5"
 					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x01_Socket")
+		(at 55.88 162.56 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4c28b68c-edd5-4d2d-b92e-910bd2c65509")
+		(property "Reference" "J18"
+			(at 57.15 161.9249 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_01x01_Socket"
+			(at 57.15 164.4649 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 55.88 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 55.88 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated"
+			(at 55.88 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a94dc0ff-64c7-4edf-9bb3-6d9f5c65be98")
+		)
+		(instances
+			(project "Stepper Motor Driver"
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5"
+					(reference "J18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x01_Socket")
+		(at 48.26 162.56 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4da9339f-9a74-4d39-8925-11ebe947482c")
+		(property "Reference" "J20"
+			(at 49.53 161.9249 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_01x01_Socket"
+			(at 49.53 164.4649 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 48.26 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 48.26 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated"
+			(at 48.26 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "21e47525-f906-40e1-a86c-846f2e7c3b61")
+		)
+		(instances
+			(project "Stepper Motor Driver"
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5"
+					(reference "J20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x01_Socket")
+		(at 124.46 162.56 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4e29179f-4af8-4b94-96c2-52c781402356")
+		(property "Reference" "J10"
+			(at 125.73 161.9249 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_01x01_Socket"
+			(at 125.73 164.4649 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 124.46 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 124.46 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated"
+			(at 124.46 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "593d3bbd-23ff-4405-b985-bc2663d3b5b4")
+		)
+		(instances
+			(project "Stepper Motor Driver"
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5"
+					(reference "J10")
 					(unit 1)
 				)
 			)
@@ -5954,6 +5619,86 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Conn_01x01_Socket")
+		(at 124.46 142.24 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b883aecf-0ee0-4d5c-8e01-ce37a4d57d75")
+		(property "Reference" "J9"
+			(at 125.73 140.3349 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x01_Socket"
+			(at 125.73 142.8749 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 124.46 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 124.46 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated"
+			(at 124.46 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ba97b3a0-cd94-49c8-bdd7-a0ec5892e02b")
+		)
+		(instances
+			(project "Stepper Motor Driver"
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5"
+					(reference "J9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 219.71 59.69 0)
 		(unit 1)
@@ -6116,8 +5861,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Tang Nano 9k:Tang_Nano_9k")
-		(at 34.29 165.1 90)
+		(lib_id "Connector:Conn_01x01_Socket")
+		(at 109.22 162.56 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6125,9 +5870,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "cb4e41f7-6cf8-4ead-8c22-b67657345f64")
-		(property "Reference" "U1"
-			(at 128.27 152.4001 90)
+		(fields_autoplaced yes)
+		(uuid "c9602a28-4986-45ea-bb29-7c0e177ed646")
+		(property "Reference" "J14"
+			(at 110.49 161.9249 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6137,18 +5883,20 @@
 				(justify right)
 			)
 		)
-		(property "Value" ""
-			(at 34.29 165.1 0)
+		(property "Value" "Conn_01x01_Socket"
+			(at 110.49 164.4649 90)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
-		(property "Footprint" "Tang Nano 9k:Tang Nano 9k Header Pins"
-			(at 34.29 165.1 0)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 109.22 162.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6159,7 +5907,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 34.29 165.1 0)
+			(at 109.22 162.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6169,8 +5917,8 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 34.29 165.1 0)
+		(property "Description" "Generic connector, single row, 01x01, script generated"
+			(at 109.22 162.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6179,155 +5927,14 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(pin "49"
-			(uuid "128d0b40-abb6-41dc-ada5-eb19d00964a4")
-		)
-		(pin "53"
-			(uuid "40778034-2b2c-428e-a3a3-4caab3605c8e")
-		)
-		(pin "2"
-			(uuid "c245ba3b-a4e2-48cd-a2d6-5bb6f2f8ada0")
-		)
-		(pin "31"
-			(uuid "b2e591be-8d63-454b-9ca0-26b7638392f3")
-		)
-		(pin "41"
-			(uuid "5640ef87-88af-4164-ab85-fcc96b62ebda")
-		)
-		(pin "42"
-			(uuid "d6e1e8ce-3d3b-4a53-9e75-073067f470d3")
-		)
-		(pin "26"
-			(uuid "5d440b11-f0b6-4839-b3f3-d8837018db2f")
-		)
-		(pin "30"
-			(uuid "7aefaefc-f3b3-4c5b-8dbd-fba636c51397")
-		)
-		(pin "33"
-			(uuid "47468006-3f14-4f62-abdb-5d46ddaa6e7c")
-		)
-		(pin "28"
-			(uuid "0a2367c9-a251-41d3-94fe-e82912890661")
-		)
-		(pin "25"
-			(uuid "00d218db-110e-421a-88c4-793b952705a7")
-		)
-		(pin "29"
-			(uuid "72eeca45-df27-4211-882a-acc1a2e9fdd5")
-		)
-		(pin "36"
-			(uuid "f202f029-5116-4408-ac5e-bdfbe2f35017")
-		)
-		(pin "35"
-			(uuid "8964baeb-bdb4-47ae-b9b4-34a2a2523ede")
-		)
-		(pin "27"
-			(uuid "b1fb46bf-2c81-49f8-90bb-5c24dbc0c1ae")
-		)
-		(pin "37"
-			(uuid "cfe08ed1-bd14-4023-ab0f-9aeef1c68cd1")
-		)
-		(pin "38"
-			(uuid "22c74c74-5d19-4d1d-ae74-c02bc867e093")
-		)
-		(pin "40"
-			(uuid "acb79957-d52f-4244-8f37-58023976ac19")
-		)
-		(pin "3"
-			(uuid "479a3df5-9400-4fe1-b4be-0db61428b44c")
 		)
 		(pin "1"
-			(uuid "7ae8dfb4-5665-4780-ae76-3cd3af774549")
-		)
-		(pin "39"
-			(uuid "85bf36b4-732c-4177-8136-802eb7e35c92")
-		)
-		(pin "32"
-			(uuid "254b454c-cd2c-468f-920e-a0809a903522")
-		)
-		(pin "34"
-			(uuid "98deb8f9-c651-487f-b451-8db80c8b4dde")
-		)
-		(pin "48"
-			(uuid "dfb8929b-7b94-4893-b867-68a9d78dcbf4")
-		)
-		(pin "51"
-			(uuid "80e74f66-0cfb-4ef8-b66a-03e411826314")
-		)
-		(pin "75"
-			(uuid "95e696ad-646d-4786-a44f-977a7466f3cd")
-		)
-		(pin "55"
-			(uuid "9be5add7-101a-4708-8865-d32a2cabdeb9")
-		)
-		(pin "57"
-			(uuid "5a4a60cb-6c3c-407d-846c-76adb14b9b1c")
-		)
-		(pin "68"
-			(uuid "8c600b59-2b2c-4e6d-b776-389638d9435a")
-		)
-		(pin "72"
-			(uuid "487f2534-10d9-4b73-9680-f625cdbd8266")
-		)
-		(pin "73"
-			(uuid "b79d53d1-6310-461b-8a92-47e027a012b1")
-		)
-		(pin "82"
-			(uuid "ebb2cc15-4dfb-40a0-b1fc-cf1fcfc540d1")
-		)
-		(pin "80"
-			(uuid "1901fef3-357a-402d-9f86-83d34351bcc9")
-		)
-		(pin "86"
-			(uuid "6d5c0209-c6e8-4642-91b4-5b66331e8a02")
-		)
-		(pin "69"
-			(uuid "80e1cef4-d7e2-4cd5-8b08-a00c16217ed8")
-		)
-		(pin "77"
-			(uuid "ee7ac4f1-a912-4346-bbf7-a27daedcd9b7")
-		)
-		(pin "63"
-			(uuid "f1e30920-f79a-4a6d-b74f-410a508e26b9")
-		)
-		(pin "71"
-			(uuid "953f926c-8913-4eb4-963f-7aac017db360")
-		)
-		(pin "81"
-			(uuid "f66556f7-4213-46a5-acce-89a1e6132951")
-		)
-		(pin "74"
-			(uuid "05384fa8-6a97-4c4a-acb7-ace47f5a2de6")
-		)
-		(pin "70"
-			(uuid "3b0cf49e-6cf7-42c8-9bc0-83e21d60adac")
-		)
-		(pin "83"
-			(uuid "716918a0-a5a2-41f1-96c2-44fb3b6714d7")
-		)
-		(pin "84"
-			(uuid "c246163c-b4d1-457f-872d-f078c593f0bb")
-		)
-		(pin "54"
-			(uuid "7646c207-23d4-4ce9-a2a6-4bb8a3bc6379")
-		)
-		(pin "56"
-			(uuid "527720e9-b4b4-45f8-9598-388a89c5d2e3")
-		)
-		(pin "79"
-			(uuid "14ac3815-addf-4f9c-b4eb-f192f10ad35b")
-		)
-		(pin "85"
-			(uuid "c79b7830-daeb-4b75-9dea-dcb639efb4a6")
-		)
-		(pin "76"
-			(uuid "9bcd4ddd-461f-46ff-b349-5688df8c0e77")
+			(uuid "5fdb94d1-6613-4ea5-ba64-75f4e76eb80b")
 		)
 		(instances
 			(project "Stepper Motor Driver"
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5"
-					(reference "U1")
+					(reference "J14")
 					(unit 1)
 				)
 			)
@@ -6488,6 +6095,86 @@
 			(project "Stepper Motor Driver"
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5"
 					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x01_Socket")
+		(at 36.83 162.56 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d2154718-ffa6-4643-9542-a1f5442ad129")
+		(property "Reference" "J23"
+			(at 38.1 161.9249 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_01x01_Socket"
+			(at 38.1 164.4649 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 36.83 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 36.83 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated"
+			(at 36.83 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f3acc517-31ca-4904-aad4-811a1a21fddd")
+		)
+		(instances
+			(project "Stepper Motor Driver"
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5"
+					(reference "J23")
 					(unit 1)
 				)
 			)
@@ -6892,6 +6579,85 @@
 			(project "Stepper Motor Driver"
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5"
 					(reference "R47")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x01_Socket")
+		(at 120.65 142.24 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e261407b-5421-43e9-a619-fbe10dae35f6")
+		(property "Reference" "J8"
+			(at 121.92 140.3349 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x01_Socket"
+			(at 121.92 142.8749 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 120.65 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 120.65 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated"
+			(at 120.65 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5a882dd1-111a-4d70-845d-5ad85f636118")
+		)
+		(instances
+			(project "Stepper Motor Driver"
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5"
+					(reference "J8")
 					(unit 1)
 				)
 			)
@@ -7773,6 +7539,85 @@
 			(project "Stepper Motor Driver"
 				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5"
 					(reference "TP18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x01_Socket")
+		(at 40.64 162.56 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fe26294d-8771-428c-be91-be7fcf14e823")
+		(property "Reference" "J22"
+			(at 41.91 161.9249 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_01x01_Socket"
+			(at 41.91 164.4649 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 40.64 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 40.64 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated"
+			(at 40.64 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "aa411989-ccfa-42da-904c-13367a043e19")
+		)
+		(instances
+			(project "Stepper Motor Driver"
+				(path "/c25060f1-f2f3-4cbd-b6ee-5f66e19502f5"
+					(reference "J22")
 					(unit 1)
 				)
 			)
