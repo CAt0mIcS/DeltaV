@@ -65,6 +65,9 @@ fp-info-cache
 # Local project settings
 *.kicad_prl
 
+# Manufacturing files
+electrical/Stepper-Motor-Driver/manufacturing/*.*
+
 
 # ---------------------------------------------------------------------------
 # gitignore for Python
