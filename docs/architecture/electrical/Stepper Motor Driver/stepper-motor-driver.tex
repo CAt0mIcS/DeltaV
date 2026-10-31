@@ -1,29 +1,49 @@
-For educational purposes, it was decided to build one of the three required stepper motor drivers from scratch. 
+For educational purposes, it was decided to build one of the three required stepper motor drivers from scratch.
 However, due to the high cost of individual components, the other two drivers would be purchased ready-made.
 
 \subsection{Component Selection}
 \subsubsection{IRF530NPbF - nMOSFET}
-Two H-Bridges with four nMOSFETs each will supply the motor with current. 
-The IRF530NPbF HEXFET$^\circledR$ power MOSFET was chosen as it strikes a good balance between cost and functionality. 
-It features a drain-to-source breakdown voltage of $100V$. 
-This allows a margain of $76V$ for potential voltage spikes induced by the inductive load. 
-The continuous drain current of $17A$ and sufficiently low $R_{\text{DS(on)}}=90m\Omega$ ensure that any current spikes will not damage the MOSFETs and heat management stays manageable.
-Furthermore, the built-in reverse recovery diode can handle up to $60A$ of pulsed drain current with a diode forward voltage of $1.3V$. 
-The gate charge $Q_\text{G}=37nC$ is also low enough to allow fast switching without too many switching losses or delays. 
+Two H-Bridges with four nMOSFETs each will supply the motor with current.
+The IRF530NPbF HEXFET$^\circledR$ power MOSFET was chosen as it strikes a good balance between cost and functionality.
+It features a drain-to-source breakdown voltage of $100V$.
+This allows a margin of $76V$ for potential voltage spikes induced by the inductive load.
+The continuous drain current of $17A$ and sufficiently low $R_{\text{DS(on)}}=90m\Omega$ ensure that any current spikes will not damage the MOSFETs and heat management remains easy.
+Furthermore, the built-in reverse recovery diode can handle up to $60A$ of pulsed drain current with a diode forward voltage of $1.3V$.
+The gate charge $Q_\text{G}=37nC$ is also low enough to allow fast switching without too many switching losses or delays.
 
 \subsubsection{UCC27710D - MOSFET Gate Driver}
-Instead of using pMOS-Technology for the high-side gate drivers, nMOSFETs will be used due to their lower $R_{\text{DS(on)}}$ and thus better heat management for high-power applications. 
-This, however, has the drawback that the gate-to-source voltage $V_{GS}$ needs to be significantly higher than the drain-to-source voltage $V_{DS}$ in order for the nMOSFET to conduct. 
-Since $V_{DS}$ will sit at around $0V$, driving the MOSFETs with a $5V$ PWM logic signal directly will result in $V_{GS}\approx 2V$ which doesn't reach the threshold voltage of around $3V$. 
-Thus, a dedicated high-side gate driver is required to boost the PWM signal to around $36V$ resulting in $V_{GS}=12V$ which is sufficient to drive the MOSFETs. 
-The UCC27710D high-side low-side gate driver was chosen as it is specifically designed for motor drivers and features protection circuitry and automatic deadtime against shorts caused by both high and low-side MOSFETs being on at the same time. 
-Furthermore, it is capable of supporting a bootstrap capacitor at the high-side gate to boost the voltage to the required $36V$ above GND. 
+Instead of using pMOS-Technology for the high-side gate drivers, nMOSFETs will be used due to their lower $R_{\text{DS(on)}}$ and thus better heat management for high-power applications.
+This, however, has the drawback that the gate-to-source voltage $V_{GS}$ needs to be above the treshold voltage $V_{th}$ in order for the nMOSFET to conduct.
+Since the source sits before the motor, the voltage will still be at around $24V$.
+Because of this, $V_{GS}$ needs to be higher than the motor voltage plus the threshold voltage, and a regular PWM signal at $5V$ doesn't satisfy these conditions
+Thus, a dedicated high-side gate driver is required to boost the PWM signal to around $36V$ resulting in $V_{GS}=12V$ which is sufficient to drive the MOSFETs.
+The UCC27710D high-side low-side gate driver was chosen as it is specifically designed for motor drivers and features protection circuitry and automatic deadtime against shorts caused by both high and low-side MOSFETs being on at the same time.
+Furthermore, it is capable of supporting a bootstrap capacitor at the high-side gate to boost the voltage to the required $36V$ above GND.
 
 \subsubsection{1N5819 - Bootstrap Diode}
-To charge the bootstrap capacitor from the UCC27710Ds supply voltage of $12V$ a diode with fast switching capabilities and low forward voltage is needed. 
-The 1N5819 Shottky diode has a forward voltage of just $0.9V$, repetitive peak reverse voltage of $40V$ and a repetitive peak forward current of $10A$. 
+To charge the bootstrap capacitor from the UCC27710Ds supply voltage of $12V$ a diode with fast switching capabilities and low forward voltage is needed.
+The 1N5819 Schottky diode has a forward voltage of just $0.9V$, repetitive peak reverse voltage of $40V$, and a repetitive peak forward current of $10A$.
 Thus, it is more than sufficient to charge the bootstrap capacitor at high switching frequencies.
 
 \subsubsection{BAT43 - Gate Diode}
-The UCC27710D's datasheet recommends adding a diode from the MOSFET's gate terminal back to the HO/LO pins to allow the gate capacitance to discharge when the MOSFET is switched off. 
-The BAT43 Shottky diode supports fast switching and low forward voltage with enough continuous forward current to safely discharge the MOSFET.
+The UCC27710D's datasheet recommends adding a diode from the MOSFET's gate terminal back to the HO/LO pins to allow the gate capacitance to discharge when the MOSFET is switched off.
+The BAT43 Schottky diode supports fast switching and low forward voltage with enough continuous forward current to safely discharge the MOSFET.
+
+\subsubsection{INA240A2 - Current Sense Amplifier}
+Measuring the current through the motor is an essential part of any stepper motor driver to dynamically determine the H-Bridge switching frequency.
+A $10m\Omega$ resistor with Kelvin connections is placed in series with the load.
+At $2A$ maximum load, the voltage drop is $V_{\text{Rsense}} \in [-20, 20]mV$.
+The INA240A2 current sense amplifier was chosen to amplify the differential voltage to a range between $0.65V$ and $2.65V$ with $1.65V$ corresponding to $0A$ current flow.
+This gives us plenty of headroom for the ADC which can handle $0V$ to $3.3V$ inputs.
+The INA240A2 was specifically designed for applications with high inductive loads and high switching frequencies as it features built-in PWM-rejection as well as low signal delay.
+
+\subsubsection{ADS7042 - ADC}
+The amplified differential voltage needs to be converted to a digital signal for the stepper driver controller.
+To ensure high throughput with low latency, the $12$-bit SAR analog-to-digital converter ADS7042 with up to $1MSPS$ was chosen.
+It outputs the digital data on SPI lines which can be read by the controller.
+Furthermore, the $3.3V$ supply voltage matches the amplifier's output range.
+
+\subsubsection{REF2033 - Reference Voltage Source}
+Both the INA240A2 and the ADS7042 are sensitive analog devices that depend on a reference voltage for the voltage shifting and analog-to-digital data conversion.
+To provide the cleanest possible reference, the separate voltage reference IC REF2033 was selected.
+It is capable of providing a very clean and noise-free $3.3V$ as well as $1.65V$ reference potential for both the INA240A2 and ADS7042.
