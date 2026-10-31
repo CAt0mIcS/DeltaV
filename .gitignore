@@ -102,7 +102,6 @@ venv.bak/
 # ---------------------------------------------------------------------------
 # gitignore for TeX
 
-*.pdf
 !docs/references/
 !docs/references/*.pdf
 !docs/references/electrical/*.pdf
